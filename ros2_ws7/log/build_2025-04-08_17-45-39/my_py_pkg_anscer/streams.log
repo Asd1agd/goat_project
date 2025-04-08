@@ -1,0 +1,46 @@
+[1.174s] Invoking command in '/home/asd/ros2_ws7/src/my_py_pkg_anscer': CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/asd/ros2_ws7/build/my_py_pkg_anscer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg_anscer build --build-base /home/asd/ros2_ws7/build/my_py_pkg_anscer/build install --record /home/asd/ros2_ws7/build/my_py_pkg_anscer/install.log --single-version-externally-managed install_data
+[1.428s] running egg_info
+[1.428s] creating ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info
+[1.429s] writing ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/PKG-INFO
+[1.429s] writing dependency_links to ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/dependency_links.txt
+[1.429s] writing entry points to ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/entry_points.txt
+[1.429s] writing requirements to ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/requires.txt
+[1.429s] writing top-level names to ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/top_level.txt
+[1.429s] writing manifest file '../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/SOURCES.txt'
+[1.441s] reading manifest file '../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/SOURCES.txt'
+[1.441s] writing manifest file '../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info/SOURCES.txt'
+[1.442s] running build
+[1.442s] running build_py
+[1.442s] creating /home/asd/ros2_ws7/build/my_py_pkg_anscer/build
+[1.442s] creating /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib
+[1.442s] creating /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer
+[1.442s] copying my_py_pkg_anscer/trajectory_publisher_saver.py -> /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer
+[1.442s] copying my_py_pkg_anscer/trajectory_visualizer.py -> /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer
+[1.442s] copying my_py_pkg_anscer/__init__.py -> /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer
+[1.443s] copying my_py_pkg_anscer/path_drawer.py -> /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer
+[1.443s] running install
+[1.444s] running install_lib
+[1.444s] creating /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer
+[1.445s] copying /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer/trajectory_publisher_saver.py -> /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer
+[1.445s] copying /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer/trajectory_visualizer.py -> /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer
+[1.445s] copying /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer/__init__.py -> /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer
+[1.445s] copying /home/asd/ros2_ws7/build/my_py_pkg_anscer/build/lib/my_py_pkg_anscer/path_drawer.py -> /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer
+[1.446s] byte-compiling /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer/trajectory_publisher_saver.py to trajectory_publisher_saver.cpython-310.pyc
+[1.447s] byte-compiling /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer/trajectory_visualizer.py to trajectory_visualizer.cpython-310.pyc
+[1.448s] byte-compiling /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer/__init__.py to __init__.cpython-310.pyc
+[1.448s] byte-compiling /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer/path_drawer.py to path_drawer.cpython-310.pyc
+[1.449s] running install_data
+[1.449s] creating /home/asd/ros2_ws7/install/my_py_pkg_anscer/share/ament_index
+[1.449s] creating /home/asd/ros2_ws7/install/my_py_pkg_anscer/share/ament_index/resource_index
+[1.449s] creating /home/asd/ros2_ws7/install/my_py_pkg_anscer/share/ament_index/resource_index/packages
+[1.449s] copying resource/my_py_pkg_anscer -> /home/asd/ros2_ws7/install/my_py_pkg_anscer/share/ament_index/resource_index/packages
+[1.449s] copying package.xml -> /home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer
+[1.449s] creating /home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/srv
+[1.449s] running install_egg_info
+[1.452s] Copying ../../build/my_py_pkg_anscer/my_py_pkg_anscer.egg-info to /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages/my_py_pkg_anscer-0.0.0-py3.10.egg-info
+[1.453s] running install_scripts
+[1.473s] Installing path_drawer script to /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/my_py_pkg_anscer
+[1.473s] Installing trajectory_publisher_saver script to /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/my_py_pkg_anscer
+[1.473s] Installing trajectory_visualizer script to /home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/my_py_pkg_anscer
+[1.473s] writing list of installed files to '/home/asd/ros2_ws7/build/my_py_pkg_anscer/install.log'
+[1.496s] Invoked command in '/home/asd/ros2_ws7/src/my_py_pkg_anscer' returned '0': CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/asd/ros2_ws7/build/my_py_pkg_anscer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg_anscer build --build-base /home/asd/ros2_ws7/build/my_py_pkg_anscer/build install --record /home/asd/ros2_ws7/build/my_py_pkg_anscer/install.log --single-version-externally-managed install_data

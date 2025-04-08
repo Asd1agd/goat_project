@@ -1,0 +1,288 @@
+[0.304s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.304s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70bae64209d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70bae64202e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70bae64202e0>>, mixin_verb=('build',))
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.845s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/asd/ros2_ws7'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extension 'colcon_pkg'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extensions ['colcon_meta']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extension 'colcon_meta'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extensions ['ros']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up_anscer) by extension 'ros'
+[0.861s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bring_up_anscer' with type 'ros.ament_cmake' and name 'bring_up_anscer'
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extensions ['ignore', 'ignore_ament_install']
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extension 'ignore'
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extension 'ignore_ament_install'
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extensions ['colcon_pkg']
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extension 'colcon_pkg'
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extensions ['colcon_meta']
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extension 'colcon_meta'
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extensions ['ros']
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces_anscer) by extension 'ros'
+[0.863s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces_anscer' with type 'ros.ament_cmake' and name 'custom_interfaces_anscer'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extensions ['ignore', 'ignore_ament_install']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extension 'ignore'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extension 'ignore_ament_install'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extensions ['colcon_pkg']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extension 'colcon_pkg'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extensions ['colcon_meta']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extension 'colcon_meta'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extensions ['ros']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg_anscer) by extension 'ros'
+[0.865s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_py_pkg_anscer' with type 'ros.ament_python' and name 'my_py_pkg_anscer'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extensions ['ignore', 'ignore_ament_install']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'ignore'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'ignore_ament_install'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extensions ['colcon_pkg']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'colcon_pkg'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extensions ['colcon_meta']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'colcon_meta'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extensions ['ros']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'ros'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extensions ['cmake', 'python']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'cmake'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'python'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extensions ['python_setup_py']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(trajectories) by extension 'python_setup_py'
+[0.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.917s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/asd/ros2_ws7/install/bring_up_anscer' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.917s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/asd/ros2_ws7/install/my_py_pkg_anscer' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.917s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/asd/ros2_ws7/install/custom_interfaces_anscer' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.921s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/asd/ros2_ws7/install/bring_up_anscer' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.921s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/asd/ros2_ws7/install/custom_interfaces_anscer' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.923s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/asd/ros2_ws7/install
+[0.923s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/asd/ros2_ws6/install
+[0.924s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/asd/ros2_ws4/install
+[0.924s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/asd/ros2_ws2/install
+[0.925s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/asd/ros2_ws/install
+[0.927s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 407 installed packages in /opt/ros/humble
+[0.929s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'cmake_target' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'cmake_clean_cache' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'cmake_clean_first' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'cmake_force_configure' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'ament_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'catkin_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces_anscer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.001s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces_anscer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws7/build/custom_interfaces_anscer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws7/install/custom_interfaces_anscer', 'merge_install': False, 'path': '/home/asd/ros2_ws7/src/custom_interfaces_anscer', 'symlink_install': False, 'test_result_base': None}
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'cmake_target' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'cmake_clean_cache' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'cmake_clean_first' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'cmake_force_configure' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'ament_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'catkin_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg_anscer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.001s] DEBUG:colcon.colcon_core.verb:Building package 'my_py_pkg_anscer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws7/build/my_py_pkg_anscer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws7/install/my_py_pkg_anscer', 'merge_install': False, 'path': '/home/asd/ros2_ws7/src/my_py_pkg_anscer', 'symlink_install': False, 'test_result_base': None}
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'cmake_args' from command line to 'None'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'cmake_target' from command line to 'None'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'cmake_clean_cache' from command line to 'False'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'cmake_clean_first' from command line to 'False'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'cmake_force_configure' from command line to 'False'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'ament_cmake_args' from command line to 'None'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'catkin_cmake_args' from command line to 'None'
+[1.002s] Level 5:colcon.colcon_core.verb:set package 'bring_up_anscer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.002s] DEBUG:colcon.colcon_core.verb:Building package 'bring_up_anscer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws7/build/bring_up_anscer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws7/install/bring_up_anscer', 'merge_install': False, 'path': '/home/asd/ros2_ws7/src/bring_up_anscer', 'symlink_install': False, 'test_result_base': None}
+[1.002s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.003s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.003s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws7/src/custom_interfaces_anscer' with build type 'ament_cmake'
+[1.003s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws7/src/custom_interfaces_anscer'
+[1.019s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.019s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.019s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/build/custom_interfaces_anscer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws7/src/custom_interfaces_anscer -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws7/install/custom_interfaces_anscer
+[4.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/build/custom_interfaces_anscer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws7/src/custom_interfaces_anscer -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws7/install/custom_interfaces_anscer
+[4.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/build/custom_interfaces_anscer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws7/build/custom_interfaces_anscer -- -j8 -l8
+[7.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/build/custom_interfaces_anscer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws7/build/custom_interfaces_anscer -- -j8 -l8
+[7.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/build/custom_interfaces_anscer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws7/build/custom_interfaces_anscer
+[7.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces_anscer)
+[7.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/build/custom_interfaces_anscer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws7/build/custom_interfaces_anscer
+[7.577s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer' for CMake module files
+[7.578s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer' for CMake config files
+[7.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces_anscer', 'cmake_prefix_path')
+[7.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/cmake_prefix_path.ps1'
+[7.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/cmake_prefix_path.dsv'
+[7.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/cmake_prefix_path.sh'
+[7.583s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib'
+[7.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces_anscer', 'ld_library_path_lib')
+[7.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/ld_library_path_lib.ps1'
+[7.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/ld_library_path_lib.dsv'
+[7.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/ld_library_path_lib.sh'
+[7.585s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/bin'
+[7.585s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib/pkgconfig/custom_interfaces_anscer.pc'
+[7.585s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib/python3.10/site-packages'
+[7.585s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/bin'
+[7.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.ps1'
+[7.587s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.dsv'
+[7.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.sh'
+[7.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.bash'
+[7.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.zsh'
+[7.595s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/colcon-core/packages/custom_interfaces_anscer)
+[7.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces_anscer)
+[7.597s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer' for CMake module files
+[7.597s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer' for CMake config files
+[7.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces_anscer', 'cmake_prefix_path')
+[7.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/cmake_prefix_path.ps1'
+[7.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/cmake_prefix_path.dsv'
+[7.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/cmake_prefix_path.sh'
+[7.599s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib'
+[7.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces_anscer', 'ld_library_path_lib')
+[7.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/ld_library_path_lib.ps1'
+[7.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/ld_library_path_lib.dsv'
+[7.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/hook/ld_library_path_lib.sh'
+[7.600s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/bin'
+[7.600s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib/pkgconfig/custom_interfaces_anscer.pc'
+[7.600s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib/python3.10/site-packages'
+[7.601s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/custom_interfaces_anscer/bin'
+[7.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.ps1'
+[7.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.dsv'
+[7.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.sh'
+[7.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.bash'
+[7.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/custom_interfaces_anscer/package.zsh'
+[7.603s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws7/install/custom_interfaces_anscer/share/colcon-core/packages/custom_interfaces_anscer)
+[7.603s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/asd/ros2_ws7/src/my_py_pkg_anscer' with build type 'ament_python'
+[7.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg_anscer', 'ament_prefix_path')
+[7.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/hook/ament_prefix_path.ps1'
+[7.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/hook/ament_prefix_path.dsv'
+[7.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/hook/ament_prefix_path.sh'
+[7.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.906s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/asd/ros2_ws7/src/my_py_pkg_anscer'
+[7.906s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.906s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/src/my_py_pkg_anscer': CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/asd/ros2_ws7/build/my_py_pkg_anscer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg_anscer build --build-base /home/asd/ros2_ws7/build/my_py_pkg_anscer/build install --record /home/asd/ros2_ws7/build/my_py_pkg_anscer/install.log --single-version-externally-managed install_data
+[9.100s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer' for CMake module files
+[9.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/src/my_py_pkg_anscer' returned '0': CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/asd/ros2_ws7/build/my_py_pkg_anscer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg_anscer build --build-base /home/asd/ros2_ws7/build/my_py_pkg_anscer/build install --record /home/asd/ros2_ws7/build/my_py_pkg_anscer/install.log --single-version-externally-managed install_data
+[9.101s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer' for CMake config files
+[9.101s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib'
+[9.101s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer/bin'
+[9.101s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/pkgconfig/my_py_pkg_anscer.pc'
+[9.101s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer/lib/python3.10/site-packages'
+[9.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg_anscer', 'pythonpath')
+[9.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/hook/pythonpath.ps1'
+[9.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/hook/pythonpath.dsv'
+[9.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/hook/pythonpath.sh'
+[9.103s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/my_py_pkg_anscer/bin'
+[9.103s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_py_pkg_anscer)
+[9.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/package.ps1'
+[9.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/package.dsv'
+[9.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/package.sh'
+[9.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/package.bash'
+[9.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/my_py_pkg_anscer/package.zsh'
+[9.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws7/install/my_py_pkg_anscer/share/colcon-core/packages/my_py_pkg_anscer)
+[9.105s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws7/src/bring_up_anscer' with build type 'ament_cmake'
+[9.105s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws7/src/bring_up_anscer'
+[9.106s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.106s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/build/bring_up_anscer': AMENT_PREFIX_PATH=/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/opt/ros/humble CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/asd/ros2_ws7/src/bring_up_anscer -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws7/install/bring_up_anscer
+[10.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/build/bring_up_anscer' returned '0': AMENT_PREFIX_PATH=/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/opt/ros/humble CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/asd/ros2_ws7/src/bring_up_anscer -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws7/install/bring_up_anscer
+[10.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/build/bring_up_anscer': AMENT_PREFIX_PATH=/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/opt/ros/humble CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/asd/ros2_ws7/build/bring_up_anscer -- -j8 -l8
+[10.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/build/bring_up_anscer' returned '0': AMENT_PREFIX_PATH=/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/opt/ros/humble CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/asd/ros2_ws7/build/bring_up_anscer -- -j8 -l8
+[10.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws7/build/bring_up_anscer': AMENT_PREFIX_PATH=/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/opt/ros/humble CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/asd/ros2_ws7/build/bring_up_anscer
+[10.259s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bring_up_anscer)
+[10.259s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer' for CMake module files
+[10.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws7/build/bring_up_anscer' returned '0': AMENT_PREFIX_PATH=/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/opt/ros/humble CMAKE_PREFIX_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/asd/ros2_ws7/build/bring_up_anscer
+[10.260s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer' for CMake config files
+[10.260s] Level 1:colcon.colcon_core.shell:create_environment_hook('bring_up_anscer', 'cmake_prefix_path')
+[10.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/hook/cmake_prefix_path.ps1'
+[10.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/hook/cmake_prefix_path.dsv'
+[10.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/hook/cmake_prefix_path.sh'
+[10.262s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/bin'
+[10.262s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/lib/pkgconfig/bring_up_anscer.pc'
+[10.262s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/lib/python3.10/site-packages'
+[10.262s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/bin'
+[10.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.ps1'
+[10.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.dsv'
+[10.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.sh'
+[10.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.bash'
+[10.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.zsh'
+[10.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws7/install/bring_up_anscer/share/colcon-core/packages/bring_up_anscer)
+[10.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bring_up_anscer)
+[10.265s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer' for CMake module files
+[10.265s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer' for CMake config files
+[10.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('bring_up_anscer', 'cmake_prefix_path')
+[10.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/hook/cmake_prefix_path.ps1'
+[10.266s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/hook/cmake_prefix_path.dsv'
+[10.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/hook/cmake_prefix_path.sh'
+[10.267s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/bin'
+[10.267s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/lib/pkgconfig/bring_up_anscer.pc'
+[10.267s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/lib/python3.10/site-packages'
+[10.267s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws7/install/bring_up_anscer/bin'
+[10.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.ps1'
+[10.268s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.dsv'
+[10.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.sh'
+[10.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.bash'
+[10.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws7/install/bring_up_anscer/share/bring_up_anscer/package.zsh'
+[10.270s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws7/install/bring_up_anscer/share/colcon-core/packages/bring_up_anscer)
+[10.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.270s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.277s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.277s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.277s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.292s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.292s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws7/install/local_setup.ps1'
+[10.295s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asd/ros2_ws7/install/_local_setup_util_ps1.py'
+[10.297s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws7/install/setup.ps1'
+[10.300s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws7/install/local_setup.sh'
+[10.301s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asd/ros2_ws7/install/_local_setup_util_sh.py'
+[10.302s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws7/install/setup.sh'
+[10.304s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws7/install/local_setup.bash'
+[10.306s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws7/install/setup.bash'
+[10.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws7/install/local_setup.zsh'
+[10.310s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws7/install/setup.zsh'

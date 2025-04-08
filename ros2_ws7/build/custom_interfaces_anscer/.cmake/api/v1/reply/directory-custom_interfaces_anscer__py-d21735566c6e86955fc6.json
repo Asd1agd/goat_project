@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "custom_interfaces_anscer__py",
+		"source" : "/home/asd/ros2_ws7/build/custom_interfaces_anscer/custom_interfaces_anscer__py"
+	}
+}
