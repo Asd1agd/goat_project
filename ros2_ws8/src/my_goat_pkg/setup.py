@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'rclpy', 'goat_interfaces'],
     zip_safe=True,
     maintainer='asd',
     maintainer_email='a93054223@gmail.com',

@@ -1,0 +1,6 @@
+setup.py
+goat_interfaces/__init__.py
+goat_interfaces.egg-info/PKG-INFO
+goat_interfaces.egg-info/SOURCES.txt
+goat_interfaces.egg-info/dependency_links.txt
+goat_interfaces.egg-info/top_level.txt
