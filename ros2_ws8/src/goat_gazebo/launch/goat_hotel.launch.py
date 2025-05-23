@@ -54,6 +54,22 @@ def generate_launch_description():
     arguments=['-d', LaunchConfiguration('rvizconfig')]
   )
 
+  navigator_server_node = Node(
+    package='my_goat_pkg',
+    executable='navigator_server',
+    name='navigator_server',
+    output='screen',
+    parameters=[{'use_sim_time': True}]
+  )
+
+  goat_robo_node = Node(
+    package='my_goat_pkg',
+    executable='goat_robo',
+    name='goat_robo',
+    output='screen',
+    parameters=[{'use_sim_time': True}]
+  )
+
   nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(nav2_path),
         launch_arguments={
@@ -63,6 +79,7 @@ def generate_launch_description():
             'params_file': params_path
         }.items()
     )
+  
 
 
   return LaunchDescription([
@@ -73,4 +90,6 @@ def generate_launch_description():
     spawn,
     # rviz_node,
     nav2_launch,
+    # navigator_server_node,
+    # goat_robo_node
   ])

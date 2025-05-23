@@ -9,6 +9,7 @@ setup.py
 ../../build/my_goat_pkg/my_goat_pkg.egg-info/top_level.txt
 ../../build/my_goat_pkg/my_goat_pkg.egg-info/zip-safe
 my_goat_pkg/__init__.py
+my_goat_pkg/navigator.py
 my_goat_pkg/robot_core_logic.py
 my_goat_pkg/simple_commander_api_template.py
 resource/my_goat_pkg

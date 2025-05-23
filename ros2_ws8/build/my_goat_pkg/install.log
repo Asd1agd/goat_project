@@ -1,8 +1,10 @@
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/simple_commander_api_template.py
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/robot_core_logic.py
+/home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/navigator.py
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/__init__.py
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/__pycache__/simple_commander_api_template.cpython-310.pyc
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/__pycache__/robot_core_logic.cpython-310.pyc
+/home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/__pycache__/navigator.cpython-310.pyc
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/__pycache__/__init__.cpython-310.pyc
 /home/asd/ros2_ws8/install/my_goat_pkg/share/ament_index/resource_index/packages/my_goat_pkg
 /home/asd/ros2_ws8/install/my_goat_pkg/share/my_goat_pkg/package.xml
@@ -13,3 +15,5 @@
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg-0.0.0-py3.10.egg-info/entry_points.txt
 /home/asd/ros2_ws8/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg-0.0.0-py3.10.egg-info/requires.txt
+/home/asd/ros2_ws8/install/my_goat_pkg/lib/my_goat_pkg/goat_robo
+/home/asd/ros2_ws8/install/my_goat_pkg/lib/my_goat_pkg/navigator_server

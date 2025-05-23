@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'navigator_server = my_goat_pkg.navigator:main',
-            
+            'goat_robo = my_goat_pkg.robot_core_logic:main',
+
         ],
     },
 )

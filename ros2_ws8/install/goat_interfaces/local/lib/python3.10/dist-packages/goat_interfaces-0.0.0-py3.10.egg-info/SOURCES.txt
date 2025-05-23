@@ -4,3 +4,5 @@ goat_interfaces.egg-info/PKG-INFO
 goat_interfaces.egg-info/SOURCES.txt
 goat_interfaces.egg-info/dependency_links.txt
 goat_interfaces.egg-info/top_level.txt
+goat_interfaces/srv/__init__.py
+goat_interfaces/srv/_go_to_pose.py

@@ -1,3 +1,4 @@
 [console_scripts]
-
+goat_robo = my_goat_pkg.robot_core_logic:main
+navigator_server = my_goat_pkg.navigator:main
 
