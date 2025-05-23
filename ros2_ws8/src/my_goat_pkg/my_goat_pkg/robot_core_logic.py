@@ -1,28 +1,19 @@
 import time
 import threading
 import math
-
-# Create threads
-t1 = threading.Thread(target=timer_stedy)
-t2 = threading.Thread(target=print_letters)
-
-
-table1 = []
-table2 = []
-table3 = []
-
-table1_ = []
-table2_ = []
-table3_ = []
+import rclpy
+from rclpy.node import Node
+from goat_interfaces.srv import GoToPose
+from geometry_msgs.msg import PoseWithCovarianceStamped
 
 table_list = ["t1","t2","t3"]
 order_canceled = [4,1]
 table_cords = [[-5.5, -1.0, 0.0],[-3.4, 0.0, 0.0],[-0.5, 1.0, 0.0]]
 kitchen_cords = [3.8, -8.0, 0.0]
 home_cords = [-3.221095085144043, -4.4982757568359375, 1.9229348]
+curent_pose = [0,0,0]
 
 table_dict = {"table1":[["t1",[12,30,11],1],["t1",[12,30,11],1]],"table2":[["t2",[12,30,11],2],["t2",[12,30,11],2]],"table3":[["t3",[12,30,11],3],["t3",[12,30,11],3]]}
-
 
 cooking_time = 10 # sec
 order_wait = 30 # sec
@@ -38,6 +29,41 @@ timer_stedy_val = 0
 kitchen_timer_val = 0
 lock = threading.Lock()
 
+class GoToPoseClient(Node):
+    def __init__(self):
+        super().__init__('go_to_pose_client')
+        self.client = self.create_client(GoToPose, 'go_to_pose')
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Waiting for GoToPose service...')
+        self.request = GoToPose.Request()
+        # self.curent_pose = [0,0,0]
+        
+        self.subscription = self.create_subscription(
+            PoseWithCovarianceStamped,
+            '/amcl_pose',
+            self.pose_callback,
+            10
+        )
+        self.pose = None
+
+    def pose_callback(self, msg):
+        self.pose = msg.pose.pose
+        x = self.pose.position.x
+        y = self.pose.position.y
+        yaw = self.get_yaw_from_quaternion(self.pose.orientation)
+        # self.curent_pose = [x,y,yaw]
+        curent_pose = [x,y,yaw]
+        self.get_logger().info(f'Current pose: x={x:.2f}, y={y:.2f}, yaw={yaw:.2f} rad')
+
+    def send_request(self, x, y, theta):
+        self.request.x = x
+        self.request.y = y
+        self.request.theta = theta
+        future = self.client.call_async(self.request)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
+    
+
 def ctime():
     current_time = time.time()
     local_time = time.localtime(current_time)
@@ -46,7 +72,7 @@ def ctime():
     min = local_time.tm_min
     sec = local_time.tm_sec
 
-    C_time = hr*24*60 + min*60 + sec
+    C_time = hr*60*60 + min*60 + sec
 
     return C_time
 
@@ -56,11 +82,11 @@ def timer_stedy():
     global timer_stedy_val
     p_time = ctime()
     while True:
-        bot_px = get_x()
-        bot_py = get_y()
+        bot_px = curent_pose[0]
+        bot_py = curent_pose[1]
         time.sleep(1)
-        bot_cx = get_x()
-        bot_cy = get_y()
+        bot_cx = curent_pose[0]
+        bot_cy = curent_pose[1]
         if abs(math.dist((bot_px,bot_py),(bot_cx,bot_cy))) > 0.2:  # asumed meter
             p_time = ctime()
 
@@ -68,14 +94,14 @@ def timer_stedy():
             timer_stedy_val = ctime() - p_time
 
 def kitchen_timer():
-    kitchen_cords = [0,0]
+    kitchen_cords2 = [3.8, -8.0]
     pTime = ctime()
     global kitchen_timer_val
     while True:
-        bot_px = get_x()
-        bot_py = get_y()
+        bot_px = curent_pose[0]
+        bot_py = curent_pose[1]
         bot_cords = [bot_px,bot_py]
-        if math.dist(bot_cords,kitchen_cords) > 5:
+        if math.dist(bot_cords,kitchen_cords2) > 5:
             pTime = ctime()
         kitchen_timer_val = ctime() - pTime
 
@@ -97,17 +123,12 @@ def cancel_order():
                 if id_no == order[-1]:
                     wetter_robot.remove(order)
 
-def move_to(cords):
+def move_to(client,cords):
     # send cords to navigater node i.e kitchen_cords = [3.8, -8.0, 0.0]
     # wait for the navigation complete responce frome navigator node
-    pass
-
-t1 = threading.Thread(target=timer_stedy)
-t1.start()
-t2 = threading.Thread(target=kitchen_timer)
-t2.start()
-t3 = threading.Thread(target=cancel_order)
-t3.start()
+    client.get_logger().info(f"sending pose message='{cords}'")
+    result = client.send_request(cords[0], cords[1], cords[2])
+    client.get_logger().info(f"Result: success={result.success}, message='{result.message}'")
 
 
 def timer_stedy_value():
@@ -121,51 +142,57 @@ def kitchen_timer_value():
     return kitchen_timer_val2
         
 
+def get_orders():
+    while True:
+        for table in table_dict:
+            if abs(table_dict[table][1][-1][-1] - kitchen[-1][-11]) == 1:    
+                kitchen.append(table_dict[table][1][-1])
+                del table_dict[table][1][-1]
 
-for table in table_dict:
-    if abs(table_dict[table][1][-1][-1] - kitchen[-1][-11]) == 1:    
-        kitchen.append(table_dict[table][1][-1])
-        del table_dict[table][1][-1]
+     
 
+def main(args=None):
+    rclpy.init(args=args)
+    client = GoToPoseClient()
+    t1 = threading.Thread(target=timer_stedy)
+    t1.start()
+    t2 = threading.Thread(target=kitchen_timer)
+    t2.start()
+    t3 = threading.Thread(target=cancel_order)
+    t3.start()
+    t4 = threading.Thread(target=get_orders)
+    t4.start()
 
-while len(wetter_robot) == 0:
-    if len(kitchen) > 0:
-        move_to(kitchen_cords)
-        while capacity_overflow == 0 and kitchen_timer_value() < order_wait:
-            for order in kitchen:
-                order_time = order[1][0]*24*60 + order[1][1]*60 + order[1][1]
-                if (order_time - ctime()) > cooking_time and len(wetter_robot) <= wetter_capacity:
-                    wetter_robot.append(order)
-                    kitchen.remove(order)
-                if len(wetter_robot) > wetter_capacity:
-                    capacity_overflow = 1
-    if kitchen_timer_value() > order_wait and len(wetter_robot)==0:
-        move_to(home_cords)
-    while len(wetter_robot) > 0:
-        table_no = table_list.index(wetter_robot[0][0])
-        move_to(table_cords[table_no])
-        for order in wetter_robot:
-            for table_order in table_dict[list(table_dict.keys())[table_no]][0]:
-                if table_order[-1] == order[-1]:    # order id is same
-                    wetter_robot.remove(order)
-                    table_dict[list(table_dict.keys())[table_no]][0].remove(table_order)
+    while len(wetter_robot) == 0:
+        if len(kitchen) > 0:
+            move_to(client,kitchen_cords)
+            while capacity_overflow == 0 and kitchen_timer_value() < order_wait:
+                for order in kitchen:
+                    order_time = order[1][0]*60*60 + order[1][1]*60 + order[1][1]
+                    if (order_time - ctime()) > cooking_time and len(wetter_robot) <= wetter_capacity:
+                        wetter_robot.append(order)
+                        kitchen.remove(order)
+                    if len(wetter_robot) > wetter_capacity:
+                        capacity_overflow = 1
+        if kitchen_timer_value() > order_wait and len(wetter_robot)==0:
+            move_to(client,home_cords)
+        while len(wetter_robot) > 0:
+            table_no = table_list.index(wetter_robot[0][0])
+            move_to(client,table_cords[table_no])
+            for order in wetter_robot:
+                for table_order in table_dict[list(table_dict.keys())[table_no]][0]:
+                    if table_order[-1] == order[-1]:    # order id is same
+                        wetter_robot.remove(order)
+                        table_dict[list(table_dict.keys())[table_no]][0].remove(table_order)
 
-    if timer_stedy_value() > stedy_state and len(wetter_robot)==0:
-        move_to(home_cords)
-         
+        if timer_stedy_value() > stedy_state and len(wetter_robot)==0:
+            move_to(client,home_cords)
 
-table_dict = {"table1":[[[1,2,3],[1,3,4]],[[1,4,3],[1,3,8]]],"table2":[[3],[4]],"table3":[[5],[6]]}
-table_dict["table1"][0].remove([1,2,3])
-print(table_dict)
+    t1.join()
+    t2.join()
+    t3.join()
+    t4.join()
+    rclpy.shutdown()
 
-# for table in table_dict:
-# print(table_dict[0])
-
-tb = 3
-tc = 4
-
-cc = tb
-print(cc)
-tb = 8
-
-print(cc)
+if __name__ == '__main__':
+    main()
