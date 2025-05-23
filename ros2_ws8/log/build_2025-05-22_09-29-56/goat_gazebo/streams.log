@@ -1,0 +1,44 @@
+[0.022s] Invoking command in '/home/asd/ros2_ws8/build/goat_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws8/src/goat_gazebo -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws8/install/goat_gazebo
+[0.181s] -- The C compiler identification is GNU 11.4.0
+[0.300s] -- The CXX compiler identification is GNU 11.4.0
+[0.322s] -- Detecting C compiler ABI info
+[0.402s] -- Detecting C compiler ABI info - done
+[0.410s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.410s] -- Detecting C compile features
+[0.411s] -- Detecting C compile features - done
+[0.416s] -- Detecting CXX compiler ABI info
+[0.505s] -- Detecting CXX compiler ABI info - done
+[0.513s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.514s] -- Detecting CXX compile features
+[0.514s] -- Detecting CXX compile features - done
+[0.521s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.045s] -- Found Python3: /home/asd/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[1.419s] -- Configuring done
+[1.422s] -- Generating done
+[1.423s] -- Build files have been written to: /home/asd/ros2_ws8/build/goat_gazebo
+[1.428s] Invoked command in '/home/asd/ros2_ws8/build/goat_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws8/src/goat_gazebo -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws8/install/goat_gazebo
+[1.430s] Invoking command in '/home/asd/ros2_ws8/build/goat_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/goat_gazebo -- -j8 -l8
+[1.472s] Invoked command in '/home/asd/ros2_ws8/build/goat_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/goat_gazebo -- -j8 -l8
+[1.483s] Invoking command in '/home/asd/ros2_ws8/build/goat_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/goat_gazebo
+[1.492s] -- Install configuration: ""
+[1.492s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo//launch
+[1.492s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo//launch/goat_hotel.launch.py
+[1.492s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo//maps
+[1.492s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo//maps/testbed_world.yaml
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo//maps/testbed_world.pgm
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/ament_index/resource_index/package_run_dependencies/goat_gazebo
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/ament_index/resource_index/parent_prefix_path/goat_gazebo
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/environment/ament_prefix_path.sh
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/environment/ament_prefix_path.dsv
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/environment/path.sh
+[1.493s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/environment/path.dsv
+[1.494s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/local_setup.bash
+[1.494s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/local_setup.sh
+[1.494s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/local_setup.zsh
+[1.494s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/local_setup.dsv
+[1.494s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.dsv
+[1.494s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/ament_index/resource_index/packages/goat_gazebo
+[1.495s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/cmake/goat_gazeboConfig.cmake
+[1.495s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/cmake/goat_gazeboConfig-version.cmake
+[1.495s] -- Installing: /home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.xml
+[1.497s] Invoked command in '/home/asd/ros2_ws8/build/goat_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/goat_gazebo

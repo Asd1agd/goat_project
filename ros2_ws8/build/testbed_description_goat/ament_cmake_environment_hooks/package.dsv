@@ -1,0 +1,4 @@
+source;share/testbed_description_goat/local_setup.bash
+source;share/testbed_description_goat/local_setup.dsv
+source;share/testbed_description_goat/local_setup.sh
+source;share/testbed_description_goat/local_setup.zsh

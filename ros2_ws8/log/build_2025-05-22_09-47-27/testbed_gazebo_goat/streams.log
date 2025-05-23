@@ -1,0 +1,77 @@
+[0.019s] Invoking command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws8/src/testbed_gazebo_goat -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws8/install/testbed_gazebo_goat
+[0.081s] -- The C compiler identification is GNU 11.4.0
+[0.148s] -- The CXX compiler identification is GNU 11.4.0
+[0.155s] -- Detecting C compiler ABI info
+[0.231s] -- Detecting C compiler ABI info - done
+[0.239s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.239s] -- Detecting C compile features
+[0.240s] -- Detecting C compile features - done
+[0.243s] -- Detecting CXX compiler ABI info
+[0.331s] -- Detecting CXX compiler ABI info - done
+[0.340s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.340s] -- Detecting CXX compile features
+[0.341s] -- Detecting CXX compile features - done
+[0.345s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.868s] -- Found Python3: /home/asd/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[1.049s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[1.052s] -- Found testbed_description: 0.0.0 (/home/asd/ros2_ws6/install/testbed_description/share/testbed_description/cmake)
+[1.057s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.239s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.241s] -- Added test 'lint_cmake' to check CMake code style
+[1.243s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.247s] -- Added test 'xmllint' to check XML markup files
+[1.249s] -- Configuring done
+[1.252s] -- Generating done
+[1.253s] -- Build files have been written to: /home/asd/ros2_ws8/build/testbed_gazebo_goat
+[1.258s] Invoked command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws8/src/testbed_gazebo_goat -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws8/install/testbed_gazebo_goat
+[1.260s] Invoking command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/testbed_gazebo_goat -- -j8 -l8
+[1.302s] Invoked command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/testbed_gazebo_goat -- -j8 -l8
+[1.304s] Invoking command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/testbed_gazebo_goat
+[1.313s] -- Install configuration: ""
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch/spawn_playground.launch.py
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch/spawn_testbed.launch.py
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/testbed_playground.world
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/testbed_empty.world
+[1.314s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world/model.config
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world/model.sdf
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/model.config
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes/chambre.png
+[1.315s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes/box_room.dae
+[1.316s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/model.sdf
+[1.316s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric
+[1.316s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric/model.config
+[1.316s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric/model.sdf
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room/model.config
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room/model.sdf
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1/model.config
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1/model.sdf
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/model.config
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence/model.config
+[1.317s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence/model.sdf
+[1.318s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/model.sdf
+[1.318s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/ament_index/resource_index/package_run_dependencies/testbed_gazebo_goat
+[1.318s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/ament_index/resource_index/parent_prefix_path/testbed_gazebo_goat
+[1.318s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/ament_prefix_path.sh
+[1.318s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/ament_prefix_path.dsv
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/path.sh
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/path.dsv
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.bash
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.sh
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.zsh
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.dsv
+[1.319s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.dsv
+[1.320s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/ament_index/resource_index/packages/testbed_gazebo_goat
+[1.320s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/cmake/testbed_gazebo_goatConfig.cmake
+[1.320s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/cmake/testbed_gazebo_goatConfig-version.cmake
+[1.320s] -- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.xml
+[1.322s] Invoked command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/testbed_gazebo_goat

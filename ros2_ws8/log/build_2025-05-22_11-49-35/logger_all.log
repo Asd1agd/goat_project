@@ -1,0 +1,460 @@
+[0.137s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.137s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7809c4c508e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7809c4c501f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7809c4c501f0>>, mixin_verb=('build',))
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.362s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/asd/ros2_ws8'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extension 'ignore'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extension 'ignore_ament_install'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extensions ['colcon_pkg']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extension 'colcon_pkg'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extensions ['colcon_meta']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extension 'colcon_meta'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extensions ['ros']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/goat_gazebo) by extension 'ros'
+[0.380s] DEBUG:colcon.colcon_core.package_identification:Package 'src/goat_gazebo' with type 'ros.ament_cmake' and name 'goat_gazebo'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extension 'ignore_ament_install'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extensions ['colcon_pkg']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extension 'colcon_pkg'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extensions ['colcon_meta']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extension 'colcon_meta'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extensions ['ros']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_description_goat) by extension 'ros'
+[0.381s] DEBUG:colcon.colcon_core.package_identification:Package 'src/testbed_description_goat' with type 'ros.ament_cmake' and name 'testbed_description_goat'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_gazebo_goat) by extension 'ros'
+[0.382s] DEBUG:colcon.colcon_core.package_identification:Package 'src/testbed_gazebo_goat' with type 'ros.ament_cmake' and name 'testbed_gazebo_goat'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_fake_node) by extension 'ros'
+[0.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_fake_node' with type 'ros.ament_cmake' and name 'turtlebot3_fake_node'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extensions ['ignore', 'ignore_ament_install']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extension 'ignore'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extension 'ignore_ament_install'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extensions ['colcon_pkg']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extension 'colcon_pkg'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extensions ['colcon_meta']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extension 'colcon_meta'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extensions ['ros']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo_goat) by extension 'ros'
+[0.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_gazebo_goat' with type 'ros.ament_cmake' and name 'turtlebot3_gazebo_goat'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore_ament_install'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_pkg']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_pkg'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_meta']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_meta'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ros']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ros'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations' with type 'ros.ament_cmake' and name 'turtlebot3_simulations'
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.425s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/asd/ros2_ws8/install
+[0.425s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/asd/ros2_ws7/install
+[0.426s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/asd/ros2_ws6/install
+[0.426s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/asd/ros2_ws4/install
+[0.427s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/asd/ros2_ws2/install
+[0.427s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/asd/ros2_ws/install
+[0.430s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 407 installed packages in /opt/ros/humble
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'goat_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.490s] DEBUG:colcon.colcon_core.verb:Building package 'goat_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws8/build/goat_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws8/install/goat_gazebo', 'merge_install': False, 'path': '/home/asd/ros2_ws8/src/goat_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'cmake_target' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'cmake_clean_cache' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'cmake_clean_first' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'cmake_force_configure' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'ament_cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'catkin_cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_description_goat' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.491s] DEBUG:colcon.colcon_core.verb:Building package 'testbed_description_goat' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws8/build/testbed_description_goat', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws8/install/testbed_description_goat', 'merge_install': False, 'path': '/home/asd/ros2_ws8/src/testbed_description_goat', 'symlink_install': False, 'test_result_base': None}
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'cmake_target' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'cmake_clean_cache' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'cmake_clean_first' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'cmake_force_configure' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'ament_cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'catkin_cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo_goat' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.491s] DEBUG:colcon.colcon_core.verb:Building package 'testbed_gazebo_goat' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws8/build/testbed_gazebo_goat', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws8/install/testbed_gazebo_goat', 'merge_install': False, 'path': '/home/asd/ros2_ws8/src/testbed_gazebo_goat', 'symlink_install': False, 'test_result_base': None}
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_target' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.492s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_fake_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws8/build/turtlebot3_fake_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws8/install/turtlebot3_fake_node', 'merge_install': False, 'path': '/home/asd/ros2_ws8/src/turtlebot3_fake_node', 'symlink_install': False, 'test_result_base': None}
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'cmake_target' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'cmake_clean_first' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'cmake_force_configure' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'ament_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'catkin_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo_goat' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.493s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gazebo_goat' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat', 'merge_install': False, 'path': '/home/asd/ros2_ws8/src/turtlebot3_gazebo_goat', 'symlink_install': False, 'test_result_base': None}
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_cache' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_first' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_force_configure' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'ament_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.493s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_simulations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asd/ros2_ws8/build/turtlebot3_simulations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asd/ros2_ws8/install/turtlebot3_simulations', 'merge_install': False, 'path': '/home/asd/ros2_ws8/src/turtlebot3_simulations', 'symlink_install': False, 'test_result_base': None}
+[0.493s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.496s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws8/src/turtlebot3_fake_node' with build type 'ament_cmake'
+[0.496s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws8/src/turtlebot3_fake_node'
+[0.498s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.498s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.499s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.541s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws8/src/goat_gazebo' with build type 'ament_cmake'
+[0.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws8/src/goat_gazebo'
+[0.542s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.542s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.551s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws8/src/testbed_description_goat' with build type 'ament_cmake'
+[0.551s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws8/src/testbed_description_goat'
+[0.551s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.552s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.564s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws8/src/testbed_gazebo_goat' with build type 'ament_cmake'
+[0.565s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws8/src/testbed_gazebo_goat'
+[0.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.565s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws8/src/turtlebot3_gazebo_goat' with build type 'ament_cmake'
+[0.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws8/src/turtlebot3_gazebo_goat'
+[0.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/turtlebot3_fake_node -- -j8 -l8
+[0.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/goat_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/goat_gazebo -- -j8 -l8
+[0.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/testbed_description_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/testbed_description_goat -- -j8 -l8
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/testbed_gazebo_goat -- -j8 -l8
+[0.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws8/src/turtlebot3_gazebo_goat -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat
+[0.699s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/testbed_description_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/testbed_description_goat -- -j8 -l8
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/testbed_description_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/testbed_description_goat
+[0.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/testbed_gazebo_goat -- -j8 -l8
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/testbed_gazebo_goat
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/goat_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/goat_gazebo -- -j8 -l8
+[0.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/goat_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/goat_gazebo
+[0.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_description_goat)
+[0.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/testbed_description_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/testbed_description_goat
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat' for CMake module files
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat' for CMake config files
+[0.776s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_description_goat', 'cmake_prefix_path')
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/hook/cmake_prefix_path.ps1'
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/hook/cmake_prefix_path.dsv'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/hook/cmake_prefix_path.sh'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/bin'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/lib/pkgconfig/testbed_description_goat.pc'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/lib/python3.10/site-packages'
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/bin'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.dsv'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.sh'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.bash'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.zsh'
+[0.786s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/testbed_description_goat/share/colcon-core/packages/testbed_description_goat)
+[0.787s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_description_goat)
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat' for CMake module files
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat' for CMake config files
+[0.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_description_goat', 'cmake_prefix_path')
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/hook/cmake_prefix_path.ps1'
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/hook/cmake_prefix_path.dsv'
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/hook/cmake_prefix_path.sh'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/bin'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/lib/pkgconfig/testbed_description_goat.pc'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/lib/python3.10/site-packages'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_description_goat/bin'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.dsv'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.sh'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.bash'
+[0.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_description_goat/share/testbed_description_goat/package.zsh'
+[0.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/testbed_description_goat/share/colcon-core/packages/testbed_description_goat)
+[0.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/turtlebot3_fake_node -- -j8 -l8
+[0.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/turtlebot3_fake_node
+[0.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_gazebo_goat)
+[0.806s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat' for CMake module files
+[0.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/testbed_gazebo_goat
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat' for CMake config files
+[0.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_gazebo_goat', 'cmake_prefix_path')
+[0.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/hook/cmake_prefix_path.ps1'
+[0.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/hook/cmake_prefix_path.dsv'
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/hook/cmake_prefix_path.sh'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/bin'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/lib/pkgconfig/testbed_gazebo_goat.pc'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/lib/python3.10/site-packages'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/bin'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.ps1'
+[0.815s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.dsv'
+[0.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.sh'
+[0.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.bash'
+[0.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.zsh'
+[0.818s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/colcon-core/packages/testbed_gazebo_goat)
+[0.819s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_gazebo_goat)
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat' for CMake module files
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat' for CMake config files
+[0.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_gazebo_goat', 'cmake_prefix_path')
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/hook/cmake_prefix_path.ps1'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/hook/cmake_prefix_path.dsv'
+[0.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/hook/cmake_prefix_path.sh'
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/bin'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/lib/pkgconfig/testbed_gazebo_goat.pc'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/lib/python3.10/site-packages'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/testbed_gazebo_goat/bin'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.dsv'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.sh'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.bash'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.zsh'
+[0.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/testbed_gazebo_goat/share/colcon-core/packages/testbed_gazebo_goat)
+[0.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(goat_gazebo)
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo' for CMake module files
+[0.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/goat_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/goat_gazebo
+[0.836s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo' for CMake config files
+[0.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('goat_gazebo', 'cmake_prefix_path')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/hook/cmake_prefix_path.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/hook/cmake_prefix_path.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/hook/cmake_prefix_path.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/lib/pkgconfig/goat_gazebo.pc'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/lib/python3.10/site-packages'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.dsv'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.sh'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.bash'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.zsh'
+[0.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/goat_gazebo/share/colcon-core/packages/goat_gazebo)
+[0.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(goat_gazebo)
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo' for CMake module files
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo' for CMake config files
+[0.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('goat_gazebo', 'cmake_prefix_path')
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/hook/cmake_prefix_path.ps1'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/hook/cmake_prefix_path.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/hook/cmake_prefix_path.sh'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/bin'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/lib/pkgconfig/goat_gazebo.pc'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/lib/python3.10/site-packages'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/goat_gazebo/bin'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.ps1'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.dsv'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.sh'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.bash'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/goat_gazebo/share/goat_gazebo/package.zsh'
+[0.852s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/goat_gazebo/share/colcon-core/packages/goat_gazebo)
+[0.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_fake_node)
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node' for CMake module files
+[0.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/turtlebot3_fake_node
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node' for CMake config files
+[0.865s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_fake_node', 'cmake_prefix_path')
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.sh'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/lib'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/bin'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/lib/pkgconfig/turtlebot3_fake_node.pc'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/lib/python3.10/site-packages'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/bin'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.ps1'
+[0.871s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.sh'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.bash'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.zsh'
+[0.874s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/colcon-core/packages/turtlebot3_fake_node)
+[0.875s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_fake_node)
+[0.876s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node' for CMake module files
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node' for CMake config files
+[0.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_fake_node', 'cmake_prefix_path')
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.ps1'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.dsv'
+[0.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.sh'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/lib'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/bin'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/lib/pkgconfig/turtlebot3_fake_node.pc'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/lib/python3.10/site-packages'
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_fake_node/bin'
+[0.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.ps1'
+[0.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv'
+[0.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.sh'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.bash'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.zsh'
+[0.886s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/turtlebot3_fake_node/share/colcon-core/packages/turtlebot3_fake_node)
+[0.887s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asd/ros2_ws8/src/turtlebot3_simulations' with build type 'ament_cmake'
+[0.887s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asd/ros2_ws8/src/turtlebot3_simulations'
+[0.888s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.888s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_simulations': AMENT_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws6/install/testbed_navigation:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/turtlebot3_simulations -- -j8 -l8
+[0.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_simulations' returned '0': AMENT_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws6/install/testbed_navigation:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/turtlebot3_simulations -- -j8 -l8
+[0.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_simulations': AMENT_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws6/install/testbed_navigation:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/turtlebot3_simulations
+[1.006s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_simulations)
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations' for CMake module files
+[1.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_simulations' returned '0': AMENT_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws6/install/testbed_navigation:/home/asd/ros2_ws6/install/testbed_gazebo:/home/asd/ros2_ws6/install/testbed_description:/home/asd/ros2_ws6/install/testbed_bringup:/home/asd/ros2_ws7/install/bring_up_anscer:/home/asd/ros2_ws7/install/custom_interfaces_anscer:/home/asd/ros2_ws4/install/my_interfaces:/home/asd/ros2_ws/install/turtlesim_project_cpp:/home/asd/ros2_ws/install/my_robot_bringup_one:/home/asd/ros2_ws/install/my_cpp_pkg:/home/asd/ros2_ws/install/my_robot_interfaces:/home/asd/ros2_ws2/install/my_robot_description:/home/asd/ros2_ws2/install/my_robot_bringup:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/turtlebot3_simulations
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations' for CMake config files
+[1.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_simulations', 'cmake_prefix_path')
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.ps1'
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.dsv'
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.sh'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/bin'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/lib/pkgconfig/turtlebot3_simulations.pc'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/lib/python3.10/site-packages'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/bin'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.ps1'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.sh'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.bash'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.zsh'
+[1.015s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/turtlebot3_simulations/share/colcon-core/packages/turtlebot3_simulations)
+[1.016s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_simulations)
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations' for CMake module files
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations' for CMake config files
+[1.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_simulations', 'cmake_prefix_path')
+[1.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.ps1'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.dsv'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.sh'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/bin'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/lib/pkgconfig/turtlebot3_simulations.pc'
+[1.021s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/lib/python3.10/site-packages'
+[1.021s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_simulations/bin'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.ps1'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv'
+[1.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.sh'
+[1.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.bash'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_simulations/share/turtlebot3_simulations/package.zsh'
+[1.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/turtlebot3_simulations/share/colcon-core/packages/turtlebot3_simulations)
+[4.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws8/src/turtlebot3_gazebo_goat -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat
+[4.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/turtlebot3_gazebo_goat -- -j8 -l8
+[29.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/turtlebot3_gazebo_goat -- -j8 -l8
+[29.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/turtlebot3_gazebo_goat
+[29.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo_goat)
+[29.571s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat' for CMake module files
+[29.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asd/ros2_ws8/build/turtlebot3_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/turtlebot3_gazebo_goat
+[29.572s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat' for CMake config files
+[29.573s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo_goat', 'cmake_prefix_path')
+[29.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/hook/cmake_prefix_path.ps1'
+[29.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/hook/cmake_prefix_path.dsv'
+[29.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/hook/cmake_prefix_path.sh'
+[29.574s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/lib'
+[29.574s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/bin'
+[29.574s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/lib/pkgconfig/turtlebot3_gazebo_goat.pc'
+[29.575s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/lib/python3.10/site-packages'
+[29.575s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/bin'
+[29.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.ps1'
+[29.576s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.dsv'
+[29.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.sh'
+[29.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.bash'
+[29.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.zsh'
+[29.577s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/colcon-core/packages/turtlebot3_gazebo_goat)
+[29.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo_goat)
+[29.578s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat' for CMake module files
+[29.579s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat' for CMake config files
+[29.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo_goat', 'cmake_prefix_path')
+[29.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/hook/cmake_prefix_path.ps1'
+[29.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/hook/cmake_prefix_path.dsv'
+[29.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/hook/cmake_prefix_path.sh'
+[29.581s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/lib'
+[29.581s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/bin'
+[29.581s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/lib/pkgconfig/turtlebot3_gazebo_goat.pc'
+[29.581s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/lib/python3.10/site-packages'
+[29.582s] Level 1:colcon.colcon_core.environment:checking '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/bin'
+[29.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.ps1'
+[29.582s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.dsv'
+[29.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.sh'
+[29.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.bash'
+[29.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/turtlebot3_gazebo_goat/package.zsh'
+[29.585s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat/share/colcon-core/packages/turtlebot3_gazebo_goat)
+[29.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[29.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[29.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[29.586s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[29.593s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[29.593s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[29.593s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.608s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.609s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws8/install/local_setup.ps1'
+[29.610s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asd/ros2_ws8/install/_local_setup_util_ps1.py'
+[29.612s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws8/install/setup.ps1'
+[29.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws8/install/local_setup.sh'
+[29.615s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asd/ros2_ws8/install/_local_setup_util_sh.py'
+[29.616s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws8/install/setup.sh'
+[29.621s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws8/install/local_setup.bash'
+[29.623s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws8/install/setup.bash'
+[29.628s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asd/ros2_ws8/install/local_setup.zsh'
+[29.629s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asd/ros2_ws8/install/setup.zsh'

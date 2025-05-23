@@ -1,0 +1,71 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/asd/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+-- Found testbed_description: 0.0.0 (/home/asd/ros2_ws6/install/testbed_description/share/testbed_description/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/asd/ros2_ws8/build/testbed_gazebo_goat
+-- Install configuration: ""
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch/spawn_playground.launch.py
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch/spawn_testbed.launch.py
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/testbed_playground.world
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/testbed_empty.world
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes/chambre.png
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes/box_room.dae
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence/model.config
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/model.sdf
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/ament_index/resource_index/package_run_dependencies/testbed_gazebo_goat
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/ament_index/resource_index/parent_prefix_path/testbed_gazebo_goat
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/ament_prefix_path.sh
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/ament_prefix_path.dsv
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/path.sh
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/path.dsv
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.bash
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.sh
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.zsh
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.dsv
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.dsv
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/ament_index/resource_index/packages/testbed_gazebo_goat
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/cmake/testbed_gazebo_goatConfig.cmake
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/cmake/testbed_gazebo_goatConfig-version.cmake
+-- Installing: /home/asd/ros2_ws8/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.xml
