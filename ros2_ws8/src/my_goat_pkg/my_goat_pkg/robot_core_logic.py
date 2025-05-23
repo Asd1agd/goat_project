@@ -3,8 +3,10 @@ import threading
 import math
 import rclpy
 from rclpy.node import Node
-from goat_interfaces.srv import GoToPose
+from goat_interfaces.msg import GoalPose
+from std_msgs.msg import String
 from geometry_msgs.msg import PoseWithCovarianceStamped
+
 
 table_list = ["table1","table2","table3"]
 order_canceled = [4,1]
@@ -32,12 +34,17 @@ lock = threading.Lock()
 class GoToPoseClient(Node):
     def __init__(self):
         super().__init__('go_to_pose_client')
-        self.client = self.create_client(GoToPose, 'go_to_pose')
-        while not self.client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('Waiting for GoToPose service...')
-        self.request = GoToPose.Request()
         # self.curent_pose = [0,0,0]
-        
+        self.goal_stat = "none"
+
+        self.state_sub = self.create_subscription(
+            String,
+            "goal_state",
+            self.state_callback,
+            10
+        )
+        self.goal_cords = self.create_publisher(GoalPose, "goal", 10)
+
         self.subscription = self.create_subscription(
             PoseWithCovarianceStamped,
             '/amcl_pose',
@@ -56,13 +63,22 @@ class GoToPoseClient(Node):
         curent_pose = [x,y,yaw]
         self.get_logger().info(f'Current pose: x={x:.2f}, y={y:.2f}, yaw={yaw:.2f} rad')
 
-    def send_request(self, x, y, theta):
-        self.request.x = x
-        self.request.y = y
-        self.request.theta = theta
-        future = self.client.call_async(self.request)
-        rclpy.spin_until_future_complete(self, future)
-        return future.result()
+
+    def state_callback(self, msg):
+        goal_status = msg.data
+        if goal_status == "✅ Goal reached or task completed":
+            self.goal_stat = "success"
+        if goal_status == "❌ Task result unavailable":
+            self.goal_stat = "fail"
+        self.get_logger().info(goal_status)
+
+    
+    def publish_goal_cords(self,x,y,theta):
+        msg = GoalPose()
+        msg.x = x
+        msg.y = y
+        msg.theta = theta
+        self.goal_cords.publish(msg)
     
 
 def ctime():
@@ -137,8 +153,14 @@ def move_to(client,cords):
     # send cords to navigater node i.e kitchen_cords = [3.8, -8.0, 0.0]
     # wait for the navigation complete responce frome navigator node
     client.get_logger().info(f"sending pose message='{cords}'")
-    result = client.send_request(cords[0], cords[1], cords[2])
-    client.get_logger().info(f"Result: success={result.success}, message='{result.message}'")
+    client.publish_goal_cords(cords[0], cords[1], cords[2])
+    state = client.goal_stat
+    while state != "success":
+        state = client.goal_stat
+        time.sleep(0.5)
+    if state == "success":
+        client.get_logger().info(f"Result: success")
+    client.goal_stat = "none"
 
 
 def timer_stedy_value():
@@ -184,45 +206,45 @@ def main(args=None):
     client.get_logger().info(f"table_dict:{table_dict}")
 
 
-    while len(wetter_robot) == 0:
-        time.sleep(0.1)
-        if len(kitchen) > 0:
-            move_to(client,kitchen_cords)
-            # Pause before sending the next goal
-            time.sleep(2)
-            client.get_logger().info(f"reached in kitchen")
-            capacity_overflow = 0
-            while capacity_overflow == 0 and kitchen_timer_value() < order_wait:
-                client.get_logger().info(f"in while capacity_overflow and kitchen_timer_value")
-                for order in kitchen:
-                    order_time = order[1][0]*60*60 + order[1][1]*60 + order[1][1]
-                    if (order_time - ctime()) > cooking_time and len(wetter_robot) <= wetter_capacity:
-                        wetter_robot.append(order)
-                        kitchen.remove(order)
-                    if len(wetter_robot) > wetter_capacity:
-                        capacity_overflow = 1
-        if kitchen_timer_value() > order_wait and len(wetter_robot)==0:
-            move_to(client,home_cords)
-            # Pause before sending the next goal
-            time.sleep(2)
-        while len(wetter_robot) > 0:
-            table_no = table_list.index(wetter_robot[0][0])
-            move_to(client,table_cords[table_no])
-            # Pause before sending the next goal
-            time.sleep(2)
-            for order in wetter_robot:
-                for table_order in table_dict[list(table_dict.keys())[table_no]][0]:
-                    if table_order[-1] == order[-1]:    # order id is same
-                        wetter_robot.remove(order)
-                        table_dict[list(table_dict.keys())[table_no]][0].remove(table_order)
+    # while len(wetter_robot) == 0:
+    #     time.sleep(0.1)
+    #     if len(kitchen) > 0:
+    #         move_to(client,kitchen_cords)
+    #         # Pause before sending the next goal
+    #         time.sleep(2)
+    #         client.get_logger().info(f"reached in kitchen")
+    #         capacity_overflow = 0
+    #         while capacity_overflow == 0 and kitchen_timer_value() < order_wait:
+    #             client.get_logger().info(f"in while capacity_overflow and kitchen_timer_value")
+    #             for order in kitchen:
+    #                 order_time = order[1][0]*60*60 + order[1][1]*60 + order[1][1]
+    #                 if (order_time - ctime()) > cooking_time and len(wetter_robot) <= wetter_capacity:
+    #                     wetter_robot.append(order)
+    #                     kitchen.remove(order)
+    #                 if len(wetter_robot) > wetter_capacity:
+    #                     capacity_overflow = 1
+    #     if kitchen_timer_value() > order_wait and len(wetter_robot)==0:
+    #         move_to(client,home_cords)
+    #         # Pause before sending the next goal
+    #         time.sleep(2)
+    #     while len(wetter_robot) > 0:
+    #         table_no = table_list.index(wetter_robot[0][0])
+    #         move_to(client,table_cords[table_no])
+    #         # Pause before sending the next goal
+    #         time.sleep(2)
+    #         for order in wetter_robot:
+    #             for table_order in table_dict[list(table_dict.keys())[table_no]][0]:
+    #                 if table_order[-1] == order[-1]:    # order id is same
+    #                     wetter_robot.remove(order)
+    #                     table_dict[list(table_dict.keys())[table_no]][0].remove(table_order)
 
-        if timer_stedy_value() > stedy_state and len(wetter_robot)==0:
-            move_to(client,home_cords)
-            # Pause before sending the next goal
-            time.sleep(2)
-        client.get_logger().info(f"wetter_robot:{wetter_robot}")
-        client.get_logger().info(f"kitchen:{kitchen}")
-        client.get_logger().info(f"table_dict:{table_dict}")
+    #     if timer_stedy_value() > stedy_state and len(wetter_robot)==0:
+    #         move_to(client,home_cords)
+    #         # Pause before sending the next goal
+    #         time.sleep(2)
+    #     client.get_logger().info(f"wetter_robot:{wetter_robot}")
+    #     client.get_logger().info(f"kitchen:{kitchen}")
+    #     client.get_logger().info(f"table_dict:{table_dict}")
 
 
     client.get_logger().info(f"out of while")

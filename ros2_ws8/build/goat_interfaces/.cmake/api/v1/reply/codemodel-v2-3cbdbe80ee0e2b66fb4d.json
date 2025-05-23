@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-54097512d64f14e4cc5c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "goat_interfaces__py",
+					"jsonFile" : "directory-goat_interfaces__py-8f9336ac99e026cdc2ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/asd/ros2_ws8/build/goat_interfaces/goat_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "goat_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_goat_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_goat_interfaces_egg-fb844325bf9a0a12d012.json",
+					"name" : "ament_cmake_python_build_goat_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_goat_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_goat_interfaces-b198868ec76926a77039.json",
+					"name" : "ament_cmake_python_copy_goat_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces-5cbf1b6bb542c338568c.json",
+					"name" : "goat_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__cpp-223ae93ad0dead6dd1c4.json",
+					"name" : "goat_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "goat_interfaces__py::@f42f12de44d5fe7720e7",
+					"jsonFile" : "target-goat_interfaces__py-96c1d07edc45f298b60c.json",
+					"name" : "goat_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_generator_c-d8a13b7bfbc14815ce18.json",
+					"name" : "goat_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_generator_py-d16edb5c3b1995a61a05.json",
+					"name" : "goat_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_c-ce862ba97bff103a216f.json",
+					"name" : "goat_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_c__pyext-d287ad9c9d4c50966efd.json",
+					"name" : "goat_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_cpp-87f0329270ca57c75705.json",
+					"name" : "goat_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_fastrtps_c-d682cbf06787adbfa33e.json",
+					"name" : "goat_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_fastrtps_c__pyext-43dd113eb05a8ba2b8ae.json",
+					"name" : "goat_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_fastrtps_cpp-f9eea506bf651a83d65a.json",
+					"name" : "goat_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_introspection_c-1ebd9d3f9fe0a8b909a4.json",
+					"name" : "goat_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_introspection_c__pyext-7ed5d78bc96b9b5591ee.json",
+					"name" : "goat_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces__rosidl_typesupport_introspection_cpp-a054287985c61e38248d.json",
+					"name" : "goat_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goat_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goat_interfaces_uninstall-76e31849a0db904f8e6f.json",
+					"name" : "goat_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-92b2009202ef9cca4ee8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/asd/ros2_ws8/build/goat_interfaces",
+		"source" : "/home/asd/ros2_ws8/src/goat_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

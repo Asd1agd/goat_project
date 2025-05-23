@@ -1,0 +1,193 @@
+[0.052s] Invoking command in '/home/asd/ros2_ws8/build/goat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/goat_interfaces -- -j8 -l8
+[0.122s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_generator_c[0m
+[0.145s] [  2%] Built target goat_interfaces__cpp
+[0.150s] [ 12%] Built target goat_interfaces__rosidl_generator_c
+[0.198s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.199s] [ 12%] Built target ament_cmake_python_copy_goat_interfaces
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_cpp[0m
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_introspection_c[0m
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_c[0m
+[0.200s] [ 23%] Built target goat_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.209s] [ 33%] Built target goat_interfaces__rosidl_typesupport_fastrtps_c
+[0.214s] [ 43%] Built target goat_interfaces__rosidl_typesupport_introspection_c
+[0.217s] [ 53%] Built target goat_interfaces__rosidl_typesupport_cpp
+[0.224s] [ 64%] Built target goat_interfaces__rosidl_typesupport_c
+[0.232s] [ 74%] Built target goat_interfaces__rosidl_typesupport_introspection_cpp
+[0.256s] [ 74%] Built target goat_interfaces
+[0.285s] [ 76%] Built target goat_interfaces__py
+[0.301s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_generator_py[0m
+[0.318s] [ 84%] Built target goat_interfaces__rosidl_generator_py
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_c__pyext[0m
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.335s] [35m[1mConsolidate compiler generated dependencies of target goat_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[0.349s] [ 89%] Built target goat_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.351s] [ 94%] Built target goat_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.352s] [100%] Built target goat_interfaces__rosidl_typesupport_c__pyext
+[0.565s] running egg_info
+[0.566s] writing goat_interfaces.egg-info/PKG-INFO
+[0.566s] writing dependency_links to goat_interfaces.egg-info/dependency_links.txt
+[0.566s] writing top-level names to goat_interfaces.egg-info/top_level.txt
+[0.568s] reading manifest file 'goat_interfaces.egg-info/SOURCES.txt'
+[0.569s] writing manifest file 'goat_interfaces.egg-info/SOURCES.txt'
+[0.595s] [100%] Built target ament_cmake_python_build_goat_interfaces_egg
+[0.609s] Invoked command in '/home/asd/ros2_ws8/build/goat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws8/build/goat_interfaces -- -j8 -l8
+[0.611s] Invoking command in '/home/asd/ros2_ws8/build/goat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/goat_interfaces
+[0.620s] -- Install configuration: ""
+[0.620s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/ament_index/resource_index/rosidl_interfaces/goat_interfaces
+[0.620s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__struct.h
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__functions.c
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__functions.h
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__type_support.h
+[0.621s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/goal_pose.h
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/go_to_pose.h
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__type_support.h
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__functions.h
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__struct.h
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__functions.c
+[0.622s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/library_path.sh
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/library_path.dsv
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_generator_c.so
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail
+[0.623s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_fastrtps_c.h
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_fastrtps_c.h
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail
+[0.624s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__type_support.c
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_introspection_c.h
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_c.h
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__type_support.c
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_typesupport_introspection_c.so
+[0.625s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_typesupport_c.so
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/goal_pose.hpp
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__type_support.hpp
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__builder.hpp
+[0.626s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__struct.hpp
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__traits.hpp
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/go_to_pose.hpp
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__builder.hpp
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__type_support.hpp
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__struct.hpp
+[0.627s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__traits.hpp
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/dds_fastrtps
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/dds_fastrtps
+[0.628s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__type_support.cpp
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_introspection_cpp.hpp
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__type_support.cpp
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/include/goat_interfaces/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_typesupport_cpp.so
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/pythonpath.sh
+[0.629s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/pythonpath.dsv
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces-0.0.0-py3.10.egg-info
+[0.630s] -- Installing: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.630s] -- Installing: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.630s] -- Installing: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.630s] -- Installing: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/msg
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/msg/__init__.py
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/msg/_goal_pose.py
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/msg/_goal_pose_s.c
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/goat_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/srv
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/srv/_go_to_pose_s.c
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/srv/_go_to_pose.py
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/srv/__init__.py
+[0.630s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/libgoat_interfaces__rosidl_generator_py.so
+[0.631s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_c.c
+[0.631s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/goat_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.631s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.631s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/__init__.py
+[0.631s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/goat_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.720s] Listing '/home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces'...
+[0.720s] Listing '/home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/msg'...
+[0.720s] Listing '/home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/srv'...
+[0.725s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/goat_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.725s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/goat_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.725s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/local/lib/python3.10/dist-packages/goat_interfaces/goat_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.726s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/lib/libgoat_interfaces__rosidl_generator_py.so
+[0.726s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/srv/GoToPose.idl
+[0.726s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/msg/GoalPose.idl
+[0.726s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/srv/GoToPose.srv
+[0.726s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/srv/GoToPose_Request.msg
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/srv/GoToPose_Response.msg
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/msg/GoalPose.msg
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/ament_index/resource_index/package_run_dependencies/goat_interfaces
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/ament_index/resource_index/parent_prefix_path/goat_interfaces
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/ament_prefix_path.sh
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/ament_prefix_path.dsv
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/path.sh
+[0.727s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/environment/path.dsv
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/local_setup.bash
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/local_setup.sh
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/local_setup.zsh
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/local_setup.dsv
+[0.728s] -- Installing: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/package.dsv
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/ament_index/resource_index/packages/goat_interfaces
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_generator_cExport.cmake
+[0.728s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_cExport.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_generator_cppExport.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.729s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_cppExport.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_generator_pyExport.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/export_goat_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.730s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.731s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.731s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfacesConfig.cmake
+[0.731s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/cmake/goat_interfacesConfig-version.cmake
+[0.731s] -- Up-to-date: /home/asd/ros2_ws8/install/goat_interfaces/share/goat_interfaces/package.xml
+[0.732s] Invoked command in '/home/asd/ros2_ws8/build/goat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws8/build/goat_interfaces

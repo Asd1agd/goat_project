@@ -76,8 +76,12 @@ rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp: /opt/ros/
 rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em
 rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em
 rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp: rosidl_adapter/goat_interfaces/srv/GoToPose.idl
+rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp: rosidl_adapter/goat_interfaces/msg/GoalPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
 	/home/asd/.pyenv/shims/python3 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
+
+rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp: rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp
 
 CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.o: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.o: rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp
@@ -93,21 +97,37 @@ CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp -o CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.s
 
+CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o: rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp
+CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o -MF CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o.d -o CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o -c /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp
+
+CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp > CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.i
+
+CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp -o CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.s
+
 # Object files for target goat_interfaces__rosidl_typesupport_c
 goat_interfaces__rosidl_typesupport_c_OBJECTS = \
-"CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.o"
+"CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.o" \
+"CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o"
 
 # External object files for target goat_interfaces__rosidl_typesupport_c
 goat_interfaces__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 
 libgoat_interfaces__rosidl_typesupport_c.so: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp.o
+libgoat_interfaces__rosidl_typesupport_c.so: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp.o
 libgoat_interfaces__rosidl_typesupport_c.so: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/build.make
 libgoat_interfaces__rosidl_typesupport_c.so: libgoat_interfaces__rosidl_generator_c.so
 libgoat_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 libgoat_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libgoat_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libgoat_interfaces__rosidl_typesupport_c.so: CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libgoat_interfaces__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libgoat_interfaces__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -118,6 +138,7 @@ CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/clean
 
+CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/goat_interfaces/msg/goal_pose__type_support.cpp
 CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/goat_interfaces/srv/go_to_pose__type_support.cpp
 	cd /home/asd/ros2_ws8/build/goat_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/asd/ros2_ws8/src/goat_interfaces /home/asd/ros2_ws8/src/goat_interfaces /home/asd/ros2_ws8/build/goat_interfaces /home/asd/ros2_ws8/build/goat_interfaces /home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/goat_interfaces__rosidl_typesupport_c.dir/depend

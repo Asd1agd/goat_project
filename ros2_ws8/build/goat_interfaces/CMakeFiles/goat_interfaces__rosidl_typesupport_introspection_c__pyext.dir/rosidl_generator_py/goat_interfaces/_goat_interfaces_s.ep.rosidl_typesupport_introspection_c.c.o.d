@@ -201,8 +201,11 @@ CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__type_support.h \
+ /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__type_support.h \
  /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/msg/rosidl_generator_c__visibility_control.h \
+ /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__struct.h \
+ /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__functions.h \
+ /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__type_support.h \
  /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \

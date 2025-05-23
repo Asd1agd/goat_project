@@ -2,7 +2,8 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped, PoseWithCovarianceStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator
-from goat_interfaces.srv import GoToPose  # Replace with your package
+from goat_interfaces.msg import GoalPose
+from std_msgs.msg import String
 import tf_transformations
 
 class GoToPoseServer(Node):
@@ -11,9 +12,45 @@ class GoToPoseServer(Node):
         self.navigator = BasicNavigator()
         self.navigator.waitUntilNav2Active()
         self.set_initial_pose()
+        self.curent_goal = []
 
-        self.srv = self.create_service(GoToPose, 'go_to_pose', self.go_to_pose_callback)
-        self.get_logger().info("🚀 GoToPose service ready.")
+        self.task_timer = None
+        self.pending_response = None
+        self.stuck_count = 0
+
+        self.subscription = self.create_subscription(
+            GoalPose,
+            'goal',
+            self.pose_callback,
+            10
+        )
+
+        self.goal_status = self.create_publisher(String, "goal_state", 10)
+
+        self.flag_go_to_pose = False  # your flag
+
+        # Timer to periodically check the flag and call the method
+        self.timer = self.create_timer(0.5, self.check_and_go_to_pose)
+
+    def publish_goal_status(self,state):
+            msg = String()
+            msg.data = state
+            self.goal_status.publish(msg)
+
+    def check_and_go_to_pose(self):
+        if self.flag_go_to_pose:
+            self.get_logger().info("🚦 Flag is True: Calling go_to_pose_callback()")
+            self.flag_go_to_pose = False  # reset flag to avoid repeat triggering
+            self.go_to_pose_callback()
+
+    def pose_callback(self, msg):
+        x = msg.x
+        y = msg.y
+        yaw = msg.theta
+        # self.curent_pose = [x,y,yaw]
+        self.curent_goal = [x,y,yaw]
+        self.flag_go_to_pose = True
+        self.get_logger().info(f'Current goal: x={x:.2f}, y={y:.2f}, yaw={yaw:.2f} rad')
 
     def set_initial_pose(self):
         pub = self.create_publisher(PoseWithCovarianceStamped, '/initialpose', 10)
@@ -41,7 +78,7 @@ class GoToPoseServer(Node):
         for _ in range(10):
             pub.publish(msg)
             rclpy.spin_once(self, timeout_sec=0.1)
-        self.get_logger().info("📌 Initial pose set.")
+        self.get_logger().info("📌 📌 Initial pose set.")
 
     def create_pose_stamped(self, x, y, yaw):
         q = tf_transformations.quaternion_from_euler(0.0, 0.0, yaw)
@@ -56,9 +93,9 @@ class GoToPoseServer(Node):
         pose.pose.orientation.w = q[3]
         return pose
 
-    def go_to_pose_callback(self, request, response):
-        self.get_logger().info(f"📨 Received Goal: x={request.x}, y={request.y}, theta={request.theta}")
-        goal_pose = self.create_pose_stamped(request.x, request.y, request.theta)
+    def go_to_pose_callback(self):
+        self.get_logger().info(f"📨 Received Goal: x={self.curent_goal[0]}, y={self.curent_goal[1]}, theta={self.curent_goal[2]}")
+        goal_pose = self.create_pose_stamped(self.curent_goal[0], self.curent_goal[1], self.curent_goal[2])
         self.navigator.goToPose(goal_pose)
 
         count = 0
@@ -79,33 +116,19 @@ class GoToPoseServer(Node):
 
         result = self.navigator.getResult()
         if result:
-            self.navigator.cancelTask()  # ✅ Ensure no hanging tasks
-            rclpy.spin_once(self, timeout_sec=0.1)
-            response.success = True
-            response.message = "✅ Goal reached or assumed reached."
-            self.get_logger().info(response.message)
+            self.get_logger().info("✅ Goal reached or task completed")
+            self.publish_goal_status("✅ Goal reached or task completed")
         else:
-            self.navigator.cancelTask()  # ✅ Ensure no hanging tasks
-            rclpy.spin_once(self, timeout_sec=0.1)
-            response.success = False
-            response.message = "❌ Failed to reach goal."
-            self.get_logger().warn(response.message)
-
-        return response
+            self.get_logger().error("❌ Task result unavailable")
+            self.publish_goal_status("❌ Task result unavailable")
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = GoToPoseServer()
     rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
-    # try:
-    #     rclpy.spin(node)
-    # except KeyboardInterrupt:
-    #     pass
-    # finally:
-    #     node.destroy_node()
-    #     rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

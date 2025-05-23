@@ -69,6 +69,7 @@ include CMakeFiles/goat_interfaces.dir/progress.make
 CMakeFiles/goat_interfaces: /home/asd/ros2_ws8/src/goat_interfaces/srv/GoToPose.srv
 CMakeFiles/goat_interfaces: rosidl_cmake/srv/GoToPose_Request.msg
 CMakeFiles/goat_interfaces: rosidl_cmake/srv/GoToPose_Response.msg
+CMakeFiles/goat_interfaces: /home/asd/ros2_ws8/src/goat_interfaces/msg/GoalPose.msg
 
 goat_interfaces: CMakeFiles/goat_interfaces
 goat_interfaces: CMakeFiles/goat_interfaces.dir/build.make

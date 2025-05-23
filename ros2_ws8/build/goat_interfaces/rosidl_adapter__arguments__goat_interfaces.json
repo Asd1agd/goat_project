@@ -1,6 +1,7 @@
 {
   "package_name": "goat_interfaces",
   "non_idl_tuples": [
-    "/home/asd/ros2_ws8/src/goat_interfaces:srv/GoToPose.srv"
+    "/home/asd/ros2_ws8/src/goat_interfaces:srv/GoToPose.srv",
+    "/home/asd/ros2_ws8/src/goat_interfaces:msg/GoalPose.msg"
   ]
 }

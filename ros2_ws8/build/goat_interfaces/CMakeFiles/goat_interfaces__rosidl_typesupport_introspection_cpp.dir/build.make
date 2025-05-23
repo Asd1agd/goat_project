@@ -78,11 +78,18 @@ rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosi
 rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em
 rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/goat_interfaces/srv/GoToPose.idl
+rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/goat_interfaces/msg/GoalPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ introspection for ROS interfaces"
 	/home/asd/.pyenv/shims/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_introspection_cpp__arguments.json
 
+rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_introspection_cpp.hpp
+
 rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp: rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp
+
+rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp: rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp
 
 CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.o: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/flags.make
 CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.o: rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp
@@ -98,21 +105,37 @@ CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp -o CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.s
 
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/flags.make
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o: rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o -MF CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o.d -o CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o -c /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp
+
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp > CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.i
+
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asd/ros2_ws8/build/goat_interfaces/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp -o CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.s
+
 # Object files for target goat_interfaces__rosidl_typesupport_introspection_cpp
 goat_interfaces__rosidl_typesupport_introspection_cpp_OBJECTS = \
-"CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.o"
+"CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.o" \
+"CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o"
 
 # External object files for target goat_interfaces__rosidl_typesupport_introspection_cpp
 goat_interfaces__rosidl_typesupport_introspection_cpp_EXTERNAL_OBJECTS =
 
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp.o
+libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp.o
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librcutils.so
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libgoat_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libgoat_interfaces__rosidl_typesupport_introspection_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libgoat_interfaces__rosidl_typesupport_introspection_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +146,8 @@ CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/clean
 
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__rosidl_typesupport_introspection_cpp.hpp
+CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/goat_interfaces/msg/detail/goal_pose__type_support.cpp
 CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp
 CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.cpp
 	cd /home/asd/ros2_ws8/build/goat_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/asd/ros2_ws8/src/goat_interfaces /home/asd/ros2_ws8/src/goat_interfaces /home/asd/ros2_ws8/build/goat_interfaces /home/asd/ros2_ws8/build/goat_interfaces /home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles/goat_interfaces__rosidl_typesupport_introspection_cpp.dir/DependInfo.cmake --color=$(COLOR)

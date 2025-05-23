@@ -242,8 +242,11 @@ CMakeFiles/goat_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gene
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
-  rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__type_support.h \
+  rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__type_support.h \
   rosidl_generator_c/goat_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__struct.h \
+  rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__functions.h \
+  rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__type_support.h \
   rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
@@ -255,6 +258,8 @@ rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__functions.h:
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__type_support.h:
+
+rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__type_support.h:
 
 /usr/include/python3.10/fileutils.h:
 
@@ -278,7 +283,11 @@ rosidl_generator_c/goat_interfaces/srv/detail/go_to_pose__type_support.h:
 
 /usr/include/python3.10/compile.h:
 
+rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__functions.h:
+
 /usr/include/python3.10/context.h:
+
+rosidl_generator_c/goat_interfaces/msg/detail/goal_pose__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 

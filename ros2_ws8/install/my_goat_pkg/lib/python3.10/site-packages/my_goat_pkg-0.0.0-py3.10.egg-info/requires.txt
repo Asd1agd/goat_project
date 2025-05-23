@@ -1,3 +1,4 @@
 goat_interfaces
 rclpy
 setuptools
+std_msgs

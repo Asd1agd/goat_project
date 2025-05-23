@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/goat_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goat_interfaces/msg/goal_pose__type_support.cpp.o"
+  "CMakeFiles/goat_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goat_interfaces/msg/goal_pose__type_support.cpp.o.d"
   "CMakeFiles/goat_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goat_interfaces/srv/go_to_pose__type_support.cpp.o"
   "CMakeFiles/goat_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goat_interfaces/srv/go_to_pose__type_support.cpp.o.d"
   "libgoat_interfaces__rosidl_typesupport_cpp.pdb"
   "libgoat_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/goat_interfaces/msg/goal_pose__type_support.cpp"
   "rosidl_typesupport_cpp/goat_interfaces/srv/go_to_pose__type_support.cpp"
 )
 

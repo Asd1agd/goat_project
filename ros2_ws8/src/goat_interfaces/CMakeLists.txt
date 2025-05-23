@@ -16,6 +16,7 @@ find_package(rosidl_default_generators REQUIRED)
 # Interface generation
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GoToPose.srv"
+  "msg/GoalPose.msg"
 )
 
 # Export dependencies

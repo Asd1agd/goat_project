@@ -1,3 +1,5 @@
+msg/GoalPose.idl
+msg/GoalPose.msg
 srv/GoToPose.idl
 srv/GoToPose.srv
 srv/GoToPose_Request.msg

@@ -70,8 +70,11 @@ goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_int
 goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_c.c
 goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/srv/_go_to_pose.py
+goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/msg/_goal_pose.py
 goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/srv/__init__.py
+goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/msg/__init__.py
 goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/srv/_go_to_pose_s.c
+goat_interfaces__py/CMakeFiles/goat_interfaces__py: rosidl_generator_py/goat_interfaces/msg/_goal_pose_s.c
 
 rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +90,7 @@ rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/goat_interfaces/srv/GoToPose.idl
+rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/goat_interfaces/msg/GoalPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/asd/ros2_ws8/build/goat_interfaces/goat_interfaces__py && /home/asd/.pyenv/shims/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -99,16 +103,28 @@ rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_c.c
 rosidl_generator_py/goat_interfaces/srv/_go_to_pose.py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/goat_interfaces/srv/_go_to_pose.py
 
+rosidl_generator_py/goat_interfaces/msg/_goal_pose.py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/goat_interfaces/msg/_goal_pose.py
+
 rosidl_generator_py/goat_interfaces/srv/__init__.py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/goat_interfaces/srv/__init__.py
 
+rosidl_generator_py/goat_interfaces/msg/__init__.py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/goat_interfaces/msg/__init__.py
+
 rosidl_generator_py/goat_interfaces/srv/_go_to_pose_s.c: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/goat_interfaces/srv/_go_to_pose_s.c
+
+rosidl_generator_py/goat_interfaces/msg/_goal_pose_s.c: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/goat_interfaces/msg/_goal_pose_s.c
 
 goat_interfaces__py: goat_interfaces__py/CMakeFiles/goat_interfaces__py
 goat_interfaces__py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_c.c
 goat_interfaces__py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 goat_interfaces__py: rosidl_generator_py/goat_interfaces/_goat_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+goat_interfaces__py: rosidl_generator_py/goat_interfaces/msg/__init__.py
+goat_interfaces__py: rosidl_generator_py/goat_interfaces/msg/_goal_pose.py
+goat_interfaces__py: rosidl_generator_py/goat_interfaces/msg/_goal_pose_s.c
 goat_interfaces__py: rosidl_generator_py/goat_interfaces/srv/__init__.py
 goat_interfaces__py: rosidl_generator_py/goat_interfaces/srv/_go_to_pose.py
 goat_interfaces__py: rosidl_generator_py/goat_interfaces/srv/_go_to_pose_s.c

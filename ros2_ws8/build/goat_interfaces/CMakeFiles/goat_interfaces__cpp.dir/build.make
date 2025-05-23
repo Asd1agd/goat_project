@@ -71,6 +71,11 @@ CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail
 CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__struct.hpp
 CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__traits.hpp
 CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.hpp
+CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/goal_pose.hpp
+CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__builder.hpp
+CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__struct.hpp
+CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__traits.hpp
+CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__type_support.hpp
 CMakeFiles/goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -89,6 +94,7 @@ rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp: /opt/ros/humble/share/r
 rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp: rosidl_adapter/goat_interfaces/srv/GoToPose.idl
+rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp: rosidl_adapter/goat_interfaces/msg/GoalPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/asd/ros2_ws8/build/goat_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/home/asd/.pyenv/shims/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/asd/ros2_ws8/build/goat_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -104,7 +110,27 @@ rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__traits.hpp: rosidl_g
 rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.hpp: rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__type_support.hpp
 
+rosidl_generator_cpp/goat_interfaces/msg/goal_pose.hpp: rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/goat_interfaces/msg/goal_pose.hpp
+
+rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__builder.hpp: rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__builder.hpp
+
+rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__struct.hpp: rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__struct.hpp
+
+rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__traits.hpp: rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__traits.hpp
+
+rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__type_support.hpp: rosidl_generator_cpp/goat_interfaces/srv/go_to_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__type_support.hpp
+
 goat_interfaces__cpp: CMakeFiles/goat_interfaces__cpp
+goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__builder.hpp
+goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__struct.hpp
+goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__traits.hpp
+goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/detail/goal_pose__type_support.hpp
+goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/msg/goal_pose.hpp
 goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__builder.hpp
 goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__struct.hpp
 goat_interfaces__cpp: rosidl_generator_cpp/goat_interfaces/srv/detail/go_to_pose__traits.hpp

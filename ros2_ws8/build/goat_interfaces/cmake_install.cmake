@@ -360,6 +360,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/goat_interfaces/msg" TYPE FILE FILES "/home/asd/ros2_ws8/build/goat_interfaces/rosidl_adapter/goat_interfaces/msg/GoalPose.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/goat_interfaces/srv" TYPE FILE FILES "/home/asd/ros2_ws8/src/goat_interfaces/srv/GoToPose.srv")
 endif()
 
@@ -369,6 +373,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/goat_interfaces/srv" TYPE FILE FILES "/home/asd/ros2_ws8/build/goat_interfaces/rosidl_cmake/srv/GoToPose_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/goat_interfaces/msg" TYPE FILE FILES "/home/asd/ros2_ws8/src/goat_interfaces/msg/GoalPose.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
