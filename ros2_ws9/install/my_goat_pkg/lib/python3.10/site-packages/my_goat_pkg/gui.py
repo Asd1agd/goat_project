@@ -17,6 +17,12 @@ global_order_id = max(order[2] for table in table_dict.values() for order in tab
 
 # Store GUI container references
 table_gui_refs = {}  # {"table1": Frame, ...}
+kitchen_gui_ref = None
+wetter_gui_ref = None
+
+# Global kitchen and wetter_robot lists
+kitchen = [["t1", [12, 30, 11], 1], ["t2", [12, 30, 11], 2], ["t3", [12, 30, 11], 3], ["t1", [12, 3, 11], 5]]
+wetter_robot = [["t1", [12, 30, 11], 1], ["t2", [12, 30, 11], 2], ["t3", [12, 30, 11], 3]]
 
 
 def cancel_order(order, button):
@@ -53,7 +59,7 @@ def add_order(table_name, container_frame):
     refresh_gui()
 
 
-def show_order_block(container, order):
+def show_order_block(container, order, show_cancel=True):
     order_frame = tk.Frame(container, relief=tk.RIDGE, borderwidth=2, padx=5, pady=5)
     order_frame.pack(pady=10, fill="x")
 
@@ -61,9 +67,10 @@ def show_order_block(container, order):
     label = tk.Label(order_frame, text=order_text, justify="left")
     label.pack()
 
-    cancel_button = tk.Button(order_frame, text="Cancel Order")
-    cancel_button.pack(pady=5)
-    cancel_button.config(command=lambda o=order, b=cancel_button: cancel_order(o, b))
+    if show_cancel:
+        cancel_button = tk.Button(order_frame, text="Cancel Order")
+        cancel_button.pack(pady=5)
+        cancel_button.config(command=lambda o=order, b=cancel_button: cancel_order(o, b))
 
 
 def refresh_gui():
@@ -71,19 +78,34 @@ def refresh_gui():
     for table_name, (visible_orders, _) in table_dict.items():
         container = table_gui_refs.get(table_name)
         if container:
-            # Clear existing widgets
             for widget in container.winfo_children():
                 widget.destroy()
-            # Rebuild current orders
             for order in visible_orders:
                 show_order_block(container, order)
 
+    # Refresh kitchen
+    if kitchen_gui_ref:
+        for widget in kitchen_gui_ref.winfo_children():
+            widget.destroy()
+        for order in kitchen:
+            show_order_block(kitchen_gui_ref, order, show_cancel=False)
+
+    # Refresh wetter
+    if wetter_gui_ref:
+        for widget in wetter_gui_ref.winfo_children():
+            widget.destroy()
+        for order in wetter_robot:
+            show_order_block(wetter_gui_ref, order, show_cancel=False)
+
 
 def create_gui():
+    global kitchen_gui_ref, wetter_gui_ref
+
     root = tk.Tk()
     root.title("Order Manager")
-    root.geometry("1200x600")
+    root.geometry("1600x600")
 
+    # Create table columns
     for col_index, (table_name, (visible_orders, _)) in enumerate(table_dict.items()):
         table_frame = tk.LabelFrame(root, text=table_name.upper(), padx=10, pady=10)
         table_frame.grid(row=0, column=col_index, padx=20, pady=20, sticky="n")
@@ -93,11 +115,9 @@ def create_gui():
 
         table_gui_refs[table_name] = orders_container  # Save reference
 
-        # Show initial visible orders
         for order in visible_orders:
             show_order_block(orders_container, order)
 
-        # Add Order Button
         add_button = tk.Button(
             table_frame,
             text="Add Order",
@@ -105,7 +125,22 @@ def create_gui():
         )
         add_button.pack(pady=10)
 
+    # Kitchen block
+    kitchen_frame = tk.LabelFrame(root, text="KITCHEN", padx=10, pady=10)
+    kitchen_frame.grid(row=0, column=len(table_dict), padx=20, pady=20, sticky="n")
+    kitchen_gui_ref = tk.Frame(kitchen_frame)
+    kitchen_gui_ref.pack()
+
+    # Wetter block
+    wetter_frame = tk.LabelFrame(root, text="WETTER", padx=10, pady=10)
+    wetter_frame.grid(row=0, column=len(table_dict) + 1, padx=20, pady=20, sticky="n")
+    wetter_gui_ref = tk.Frame(wetter_frame)
+    wetter_gui_ref.pack()
+
+    refresh_gui()
+
     root.mainloop()
+
     print("Canceled orders:", order_canceled)
     print("Final table_dict:", table_dict)
 

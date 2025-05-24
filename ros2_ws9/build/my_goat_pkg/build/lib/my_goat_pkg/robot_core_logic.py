@@ -1,4 +1,5 @@
 
+#################################### imports #######################################
 import time
 import threading
 import math
@@ -12,13 +13,7 @@ import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime
 
-
-# # Initial table_dict
-# table_dict = {
-#     "table1": [[["t1", [12, 30, 11], 1]], [["t1", [12, 30, 11], 1]]],
-#     "table2": [[["t2", [12, 30, 11], 2]], [["t2", [12, 30, 11], 2]]],
-#     "table3": [[["t3", [12, 30, 11], 3]], [["t3", [12, 30, 11], 3]]]
-# }
+#################################### datatype and global variable declaration #######################################
 
 table_dict = {
     "table1": [[], []],
@@ -34,99 +29,8 @@ global_order_id = 0
 
 # Store GUI container references
 table_gui_refs = {}  # {"table1": Frame, ...}
-
-
-def cancel_order(order, button):
-    order_id = order[2]
-    
-    if order_id not in order_canceled:
-        order_canceled.append(order_id)
-        button.config(state="disabled")
-        messagebox.showinfo("Order Canceled", f"Order ID {order_id} has been canceled.")
-    else:
-        messagebox.showwarning("Already Canceled", f"Order ID {order_id} was already canceled.")
-
-    print(f"order_canceled: {order_canceled}")
-
-     # Refresh GUI
-    refresh_gui()
-
-
-def add_order(table_name, container_frame):
-    global global_order_id
-    now = datetime.now()
-    global_order_id += 1
-
-    table_code = "t" + table_name[-1]
-    order = [table_code, [now.hour, now.minute, now.second], global_order_id]
-
-    # Add to both front-end and back-end lists
-    table_dict[table_name][0].append(order)
-    table_dict[table_name][1].append(order)
-
-    # GUI display for new order
-    show_order_block(container_frame, order)
-    print(table_dict)
-
-     # Refresh GUI
-    refresh_gui()
-
-
-def show_order_block(container, order):
-    order_frame = tk.Frame(container, relief=tk.RIDGE, borderwidth=2, padx=5, pady=5)
-    order_frame.pack(pady=10, fill="x")
-
-    order_text = f"Table: {order[0]}\nTime: {order[1][0]:02d}:{order[1][1]:02d}:{order[1][2]:02d}\nOrder ID: {order[2]}"
-    label = tk.Label(order_frame, text=order_text, justify="left")
-    label.pack()
-
-    cancel_button = tk.Button(order_frame, text="Cancel Order")
-    cancel_button.pack(pady=5)
-    cancel_button.config(command=lambda o=order, b=cancel_button: cancel_order(o, b))
-
-
-def refresh_gui():
-    """Rebuilds the GUI content based on current table_dict."""
-    for table_name, (visible_orders, _) in table_dict.items():
-        container = table_gui_refs.get(table_name)
-        if container:
-            # Clear existing widgets
-            for widget in container.winfo_children():
-                widget.destroy()
-            # Rebuild current orders
-            for order in visible_orders:
-                show_order_block(container, order)
-
-
-def create_gui():
-    root = tk.Tk()
-    root.title("Order Manager")
-    root.geometry("1200x600")
-
-    for col_index, (table_name, (visible_orders, _)) in enumerate(table_dict.items()):
-        table_frame = tk.LabelFrame(root, text=table_name.upper(), padx=10, pady=10)
-        table_frame.grid(row=0, column=col_index, padx=20, pady=20, sticky="n")
-
-        orders_container = tk.Frame(table_frame)
-        orders_container.pack()
-
-        table_gui_refs[table_name] = orders_container  # Save reference
-
-        # Show initial visible orders
-        for order in visible_orders:
-            show_order_block(orders_container, order)
-
-        # Add Order Button
-        add_button = tk.Button(
-            table_frame,
-            text="Add Order",
-            command=lambda tn=table_name, f=orders_container: add_order(tn, f)
-        )
-        add_button.pack(pady=10)
-
-    root.mainloop()
-    # print("Canceled orders:", order_canceled)
-    # print("Final table_dict:", table_dict)
+kitchen_gui_ref = None
+wetter_gui_ref = None
 
 table_list = ["table1","table2","table3"]
 table_list2 = ["t1","t2","t3"]
@@ -151,6 +55,130 @@ timer_stedy_val = 0
 kitchen_timer_val = 0
 lock = threading.Lock()
 
+#################################### GUI logic #######################################
+
+# To cancel the order from gui
+def cancel_order(order, button):
+    order_id = order[2]
+    if order_id not in order_canceled:
+        order_canceled.append(order_id)
+        button.config(state="disabled")
+        messagebox.showinfo("Order Canceled", f"Order ID {order_id} has been canceled.")
+    else:
+        messagebox.showwarning("Already Canceled", f"Order ID {order_id} was already canceled.")
+
+    print("Canceled orders:", order_canceled)
+    print("Updated table_dict:", table_dict)
+
+    # Refresh GUI
+    refresh_gui()
+
+# To add order on table from gui
+def add_order(table_name, container_frame):
+    global global_order_id
+    now = datetime.now()
+    global_order_id += 1
+
+    table_code = "t" + table_name[-1]
+    order = [table_code, [now.hour, now.minute, now.second], global_order_id]
+
+    # Add to both front-end and back-end lists
+    table_dict[table_name][0].append(order)
+    table_dict[table_name][1].append(order)
+
+    print("Updated table_dict:", table_dict)
+
+    # Refresh GUI
+    refresh_gui()
+
+
+# order block with table id ,time of order and order id
+def show_order_block(container, order, show_cancel=True):
+    order_frame = tk.Frame(container, relief=tk.RIDGE, borderwidth=2, padx=5, pady=5)
+    order_frame.pack(pady=10, fill="x")
+
+    order_text = f"Table: {order[0]}\nTime: {order[1][0]:02d}:{order[1][1]:02d}:{order[1][2]:02d}\nOrder ID: {order[2]}"
+    label = tk.Label(order_frame, text=order_text, justify="left")
+    label.pack()
+
+    if show_cancel:
+        cancel_button = tk.Button(order_frame, text="Cancel Order")
+        cancel_button.pack(pady=5)
+        cancel_button.config(command=lambda o=order, b=cancel_button: cancel_order(o, b))
+
+# To refresh the gui at each update
+def refresh_gui():
+    """Rebuilds the GUI content based on current table_dict."""
+    for table_name, (visible_orders, _) in table_dict.items():
+        container = table_gui_refs.get(table_name)
+        if container:
+            for widget in container.winfo_children():
+                widget.destroy()
+            for order in visible_orders:
+                show_order_block(container, order)
+
+    # Refresh kitchen
+    if kitchen_gui_ref:
+        for widget in kitchen_gui_ref.winfo_children():
+            widget.destroy()
+        for order in kitchen:
+            show_order_block(kitchen_gui_ref, order, show_cancel=False)
+
+    # Refresh wetter
+    if wetter_gui_ref:
+        for widget in wetter_gui_ref.winfo_children():
+            widget.destroy()
+        for order in wetter_robot:
+            show_order_block(wetter_gui_ref, order, show_cancel=False)
+
+
+def create_gui():
+    global kitchen_gui_ref, wetter_gui_ref
+
+    root = tk.Tk()
+    root.title("Order Manager")
+    root.geometry("1600x600")
+
+    # Create table columns
+    for col_index, (table_name, (visible_orders, _)) in enumerate(table_dict.items()):
+        table_frame = tk.LabelFrame(root, text=table_name.upper(), padx=10, pady=10)
+        table_frame.grid(row=0, column=col_index, padx=20, pady=20, sticky="n")
+
+        orders_container = tk.Frame(table_frame)
+        orders_container.pack()
+
+        table_gui_refs[table_name] = orders_container  # Save reference
+
+        for order in visible_orders:
+            show_order_block(orders_container, order)
+
+        add_button = tk.Button(
+            table_frame,
+            text="Add Order",
+            command=lambda tn=table_name, f=orders_container: add_order(tn, f)
+        )
+        add_button.pack(pady=10)
+
+    # Kitchen block
+    kitchen_frame = tk.LabelFrame(root, text="KITCHEN", padx=10, pady=10)
+    kitchen_frame.grid(row=0, column=len(table_dict), padx=20, pady=20, sticky="n")
+    kitchen_gui_ref = tk.Frame(kitchen_frame)
+    kitchen_gui_ref.pack()
+
+    # Wetter block
+    wetter_frame = tk.LabelFrame(root, text="WETTER", padx=10, pady=10)
+    wetter_frame.grid(row=0, column=len(table_dict) + 1, padx=20, pady=20, sticky="n")
+    wetter_gui_ref = tk.Frame(wetter_frame)
+    wetter_gui_ref.pack()
+
+    refresh_gui()
+
+    root.mainloop()
+
+
+#################################### Node Class #######################################
+
+# node class with initialisation , topics , callbacks and navigation logic
 class GoToPoseClient(Node):
     def __init__(self):
         super().__init__('go_to_pose_client')
@@ -222,8 +250,10 @@ class GoToPoseClient(Node):
             rclpy.spin_once(self, timeout_sec=0.1)
             self.get_logger().warn("❌ Failed to reach goal.")
 
-    
 
+#################################### Timers for monitoring #######################################
+    
+# to monitor curent time
 def ctime():
     current_time = time.time()
     local_time = time.localtime(current_time)
@@ -238,7 +268,7 @@ def ctime():
     return C_time
 
 
-
+# To moniter that for how much time waiter robot is standing on same position without any order
 def timer_stedy():
     global timer_stedy_val
     p_time = ctime()
@@ -255,6 +285,7 @@ def timer_stedy():
         with lock:
             timer_stedy_val = ctime() - p_time
 
+# To moniter that for how much time the waiter robot is in kitchen
 def kitchen_timer():
     kitchen_cords2 = [-3.8, -8.0]
     pTime = ctime()
@@ -270,42 +301,50 @@ def kitchen_timer():
         kitchen_timer_val = ctime() - pTime
         # print(f"kitchen_timer_val = {kitchen_timer_val}")
 
+def timer_stedy_value():
+    with lock:
+        timer_stedy_val2 = timer_stedy_val 
+    return timer_stedy_val2
+
+def kitchen_timer_value():
+    with lock:
+        kitchen_timer_val2 = kitchen_timer_val 
+    return kitchen_timer_val2
+
+#################################### orders updates in actual data list #######################################
+
+# To register the orders in kitchen from tables
+def get_orders():
+    while True:
+        time.sleep(0.1)
+        for table in table_list:
+            if len(table_dict[table][1]) > 0:
+                kitchen.append(table_dict[table][1][-1])
+                del table_dict[table][1][-1]
+                refresh_gui()
+
+        for table in table_list:
+            if len(table_dict[table][1]) > 0:
+                if abs(table_dict[table][1][-1][-1] - kitchen[-1][-1]) == 1:    
+                    kitchen.append(table_dict[table][1][-1])
+                    del table_dict[table][1][-1]
+                    refresh_gui()
+
+# To delete the canceled order from list and update the gui
 def cancel_order_dict():
     global order_canceled,table_list,table_dict,kitchen,wetter_robot
     while True:
         with lock:
-            if len(order_canceled) > 0:  # in seperate threde
-                # print("order_canceled list")
-                # print(order_canceled)
+            if len(order_canceled) > 0: 
                 id_no = order_canceled.pop(0)
                 for table in table_list:
-                    # print(table)
-                    # print("              ")
-                    # print("complete data")
-                    # print(table_dict)
-                    # print("              ")
-                    # print("table_dict[table][0]")
-                    # print(table_dict[table][0])
                     for order in table_dict[table][1]:
-                        # print(order)
-                        # print(f"idno{id_no}   :   order:{order}")
                         if id_no == order[-1]:
-                            # print("table_dict 1")
-                            # print(table_dict[table][1])
                             table_dict[table][1].remove(order)
-                            # print("order to remove t1")
-                            # print(order)
-                            # print("table_dict 1 updated")
-                            # print(table_dict[table][1])
                     for order in table_dict[table][0]:
                         if id_no == order[-1]:
-                            # print("table_dict 0")
-                            # print(table_dict[table][0])
                             table_dict[table][0].remove(order)
-                            # print("order to remove t0")
-                            # print(order)
-                            # print("table_dict 0 updated")
-                            # print(table_dict[table][0])
+
                 for order in kitchen:
                     if id_no == order[-1]:
                         kitchen.remove(order)
@@ -316,49 +355,27 @@ def cancel_order_dict():
         time.sleep(1)
 
 
+
+#################################### navigation logic from class function #######################################
+
 def move_to(client,cords):
     # send cords to navigater node i.e kitchen_cords = [3.8, -8.0, 0.0]
     # wait for the navigation complete responce frome navigator node
-    # client.get_logger().info(f"sending pose message='{cords}'")
+    client.get_logger().info(f"navigating to cords ='{cords}'")
     client.go_to_pose_callback(cords[0], cords[1], cords[2])
-    # client.get_logger().info(f"Result: success={result.success}, message='{result.message}'")
 
 
-def timer_stedy_value():
-    with lock:
-        timer_stedy_val2 = timer_stedy_val 
-    return timer_stedy_val2
+   
 
-def kitchen_timer_value():
-    with lock:
-        kitchen_timer_val2 = kitchen_timer_val 
-    return kitchen_timer_val2
-        
 
-def get_orders():
-    while True:
-        time.sleep(0.1)
-        for table in table_list:
-            if len(table_dict[table][1]) > 0:
-                kitchen.append(table_dict[table][1][-1])
-                # print("1                   ")
-                # print(kitchen)
-                # print("1                   ")
-                del table_dict[table][1][-1]
 
-        for table in table_list:
-            if len(table_dict[table][1]) > 0:
-                if abs(table_dict[table][1][-1][-1] - kitchen[-1][-1]) == 1:    
-                    kitchen.append(table_dict[table][1][-1])
-                    # print("2                   ")
-                    # print(kitchen)
-                    # print("2                   ")
-                    del table_dict[table][1][-1]
-
-     
+#################################### complete combined logic in main function #######################################
 
 def main(args=None):
+    # setup delay for nav2 stack ready
     time.sleep(10)
+
+    # initialising the client node
     rclpy.init(args=args)
     client = GoToPoseClient()
     t1 = threading.Thread(target=timer_stedy)
@@ -371,40 +388,42 @@ def main(args=None):
     t4.start()
     t5 = threading.Thread(target=create_gui)
     t5.start()
-    # client.get_logger().info(f"wetter_robot:{wetter_robot}")
-    # client.get_logger().info(f"kitchen:{kitchen}")
-    # client.get_logger().info(f"table_dict:{table_dict}")
 
+    # Initial lists data 
+    client.get_logger().info(f"wetter_robot:{wetter_robot}")
+    client.get_logger().info(f"kitchen:{kitchen}")
+    client.get_logger().info(f"table_dictionanry:{table_dict}")
 
+    # logic starts with empty waiter trolly 
     while len(wetter_robot) == 0:
         time.sleep(0.1)
+
+        # if there are orders in kitchen navigate to it and and fillup the waiter trolly
         if len(kitchen) > 0:
             move_to(client,kitchen_cords)
             # Pause before sending the next goal
             time.sleep(2)
-            # client.get_logger().info(f"reached in kitchen")
+            client.get_logger().info(f"reached in kitchen")
             capacity_overflow = 0
             while capacity_overflow == 0 and kitchen_timer_value() < order_wait:
-                # client.get_logger().info(f"in while capacity_overflow and kitchen_timer_value")
                 for order in kitchen:
                     order_time = order[1][0]*60*60 + order[1][1]*60 + order[1][1]
                     if (ctime() - order_time) > cooking_time and len(wetter_robot) <= wetter_capacity:
                         wetter_robot.append(order)
                         kitchen.remove(order)
+                        refresh_gui()
                     if len(wetter_robot) > wetter_capacity:
                         capacity_overflow = 1
+
+        # if waited for too lonh in kitchen and waiter trolly is stiil empty then go home
         if kitchen_timer_value() > order_wait and len(wetter_robot)==0:
             move_to(client,home_cords)
             # Pause before sending the next goal
             time.sleep(2)
+        
+        # if waiter trolly is filled with orders then deliver it to the table with table id and order id 
         while len(wetter_robot) > 0:
-            # print(wetter_robot)
-            # client.get_logger().info("here")
             table_no = table_list2.index(wetter_robot[0][0])
-            # print(table_no)
-            # client.get_logger().info("here")
-            # client.get_logger().info(str(wetter_robot))
-            # client.get_logger().info(str(table_no))
             move_to(client,table_cords[table_no])
             # Pause before sending the next goal
             time.sleep(2)
@@ -415,18 +434,21 @@ def main(args=None):
                         table_dict[list(table_dict.keys())[table_no]][0].remove(table_order)
                         refresh_gui()
 
+        # if waiter trolly is at one position for too long with no orders then move back to home position
         if timer_stedy_value() > stedy_state and len(wetter_robot)==0:
             move_to(client,home_cords)
             # Pause before sending the next goal
             time.sleep(2)
+
+        # value and data in lists to debug at last of each loop
         client.get_logger().info(f"==========================start============================")
         client.get_logger().info(f"wetter_robot:{wetter_robot}")
         client.get_logger().info(f"kitchen:{kitchen}")
         client.get_logger().info(f"table_dict:{table_dict}")
         client.get_logger().info(f"============================end==========================")
 
-
-    # client.get_logger().info(f"out of while")
+    # final clean up
+    client.get_logger().info(f"out of while shuting down the Node")
     rclpy.spin(client)
     t1.join()
     t2.join()
