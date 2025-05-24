@@ -1,3 +1,4 @@
+
 import time
 import threading
 import math
@@ -10,6 +11,7 @@ import tf_transformations
 import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime
+
 
 # # Initial table_dict
 # table_dict = {
@@ -44,7 +46,7 @@ def cancel_order(order, button):
     else:
         messagebox.showwarning("Already Canceled", f"Order ID {order_id} was already canceled.")
 
-    print(table_dict)
+    print(f"order_canceled: {order_canceled}")
 
      # Refresh GUI
     refresh_gui()
@@ -123,8 +125,8 @@ def create_gui():
         add_button.pack(pady=10)
 
     root.mainloop()
-    print("Canceled orders:", order_canceled)
-    print("Final table_dict:", table_dict)
+    # print("Canceled orders:", order_canceled)
+    # print("Final table_dict:", table_dict)
 
 table_list = ["table1","table2","table3"]
 table_list2 = ["t1","t2","t3"]
@@ -273,14 +275,37 @@ def cancel_order_dict():
     while True:
         with lock:
             if len(order_canceled) > 0:  # in seperate threde
-                id_no = order_canceled[0]
+                # print("order_canceled list")
+                # print(order_canceled)
+                id_no = order_canceled.pop(0)
                 for table in table_list:
+                    # print(table)
+                    # print("              ")
+                    # print("complete data")
+                    # print(table_dict)
+                    # print("              ")
+                    # print("table_dict[table][0]")
+                    # print(table_dict[table][0])
                     for order in table_dict[table][1]:
+                        # print(order)
+                        # print(f"idno{id_no}   :   order:{order}")
                         if id_no == order[-1]:
+                            # print("table_dict 1")
+                            # print(table_dict[table][1])
                             table_dict[table][1].remove(order)
+                            # print("order to remove t1")
+                            # print(order)
+                            # print("table_dict 1 updated")
+                            # print(table_dict[table][1])
                     for order in table_dict[table][0]:
                         if id_no == order[-1]:
+                            # print("table_dict 0")
+                            # print(table_dict[table][0])
                             table_dict[table][0].remove(order)
+                            # print("order to remove t0")
+                            # print(order)
+                            # print("table_dict 0 updated")
+                            # print(table_dict[table][0])
                 for order in kitchen:
                     if id_no == order[-1]:
                         kitchen.remove(order)
@@ -294,7 +319,7 @@ def cancel_order_dict():
 def move_to(client,cords):
     # send cords to navigater node i.e kitchen_cords = [3.8, -8.0, 0.0]
     # wait for the navigation complete responce frome navigator node
-    client.get_logger().info(f"sending pose message='{cords}'")
+    # client.get_logger().info(f"sending pose message='{cords}'")
     client.go_to_pose_callback(cords[0], cords[1], cords[2])
     # client.get_logger().info(f"Result: success={result.success}, message='{result.message}'")
 
@@ -316,23 +341,24 @@ def get_orders():
         for table in table_list:
             if len(table_dict[table][1]) > 0:
                 kitchen.append(table_dict[table][1][-1])
-                print("1                   ")
-                print(kitchen)
-                print("1                   ")
+                # print("1                   ")
+                # print(kitchen)
+                # print("1                   ")
                 del table_dict[table][1][-1]
 
         for table in table_list:
             if len(table_dict[table][1]) > 0:
                 if abs(table_dict[table][1][-1][-1] - kitchen[-1][-1]) == 1:    
                     kitchen.append(table_dict[table][1][-1])
-                    print("2                   ")
-                    print(kitchen)
-                    print("2                   ")
+                    # print("2                   ")
+                    # print(kitchen)
+                    # print("2                   ")
                     del table_dict[table][1][-1]
 
      
 
 def main(args=None):
+    time.sleep(10)
     rclpy.init(args=args)
     client = GoToPoseClient()
     t1 = threading.Thread(target=timer_stedy)
@@ -345,9 +371,9 @@ def main(args=None):
     t4.start()
     t5 = threading.Thread(target=create_gui)
     t5.start()
-    client.get_logger().info(f"wetter_robot:{wetter_robot}")
-    client.get_logger().info(f"kitchen:{kitchen}")
-    client.get_logger().info(f"table_dict:{table_dict}")
+    # client.get_logger().info(f"wetter_robot:{wetter_robot}")
+    # client.get_logger().info(f"kitchen:{kitchen}")
+    # client.get_logger().info(f"table_dict:{table_dict}")
 
 
     while len(wetter_robot) == 0:
@@ -356,7 +382,7 @@ def main(args=None):
             move_to(client,kitchen_cords)
             # Pause before sending the next goal
             time.sleep(2)
-            client.get_logger().info(f"reached in kitchen")
+            # client.get_logger().info(f"reached in kitchen")
             capacity_overflow = 0
             while capacity_overflow == 0 and kitchen_timer_value() < order_wait:
                 # client.get_logger().info(f"in while capacity_overflow and kitchen_timer_value")
@@ -373,12 +399,12 @@ def main(args=None):
             time.sleep(2)
         while len(wetter_robot) > 0:
             # print(wetter_robot)
-            client.get_logger().info("here")
+            # client.get_logger().info("here")
             table_no = table_list2.index(wetter_robot[0][0])
             # print(table_no)
-            client.get_logger().info("here")
-            client.get_logger().info(str(wetter_robot))
-            client.get_logger().info(str(table_no))
+            # client.get_logger().info("here")
+            # client.get_logger().info(str(wetter_robot))
+            # client.get_logger().info(str(table_no))
             move_to(client,table_cords[table_no])
             # Pause before sending the next goal
             time.sleep(2)
@@ -393,12 +419,14 @@ def main(args=None):
             move_to(client,home_cords)
             # Pause before sending the next goal
             time.sleep(2)
+        client.get_logger().info(f"==========================start============================")
         client.get_logger().info(f"wetter_robot:{wetter_robot}")
         client.get_logger().info(f"kitchen:{kitchen}")
         client.get_logger().info(f"table_dict:{table_dict}")
+        client.get_logger().info(f"============================end==========================")
 
 
-    client.get_logger().info(f"out of while")
+    # client.get_logger().info(f"out of while")
     rclpy.spin(client)
     t1.join()
     t2.join()
@@ -407,6 +435,7 @@ def main(args=None):
     rclpy.shutdown()
 
 if __name__ == '__main__':
+    time.sleep(10)
     main()
 
 

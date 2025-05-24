@@ -90,6 +90,6 @@ def generate_launch_description():
     spawn,
     # rviz_node,
     nav2_launch,
-    # navigator_server_node,
-    # goat_robo_node
+    navigator_server_node,
+    goat_robo_node
   ])
