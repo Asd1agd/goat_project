@@ -1,0 +1,44 @@
+[0.160s] Invoking command in '/home/asd/ros2_ws9/build/testbed_description_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws9/build/testbed_description_goat -- -j8 -l8
+[0.370s] Invoked command in '/home/asd/ros2_ws9/build/testbed_description_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws9/build/testbed_description_goat -- -j8 -l8
+[0.447s] Invoking command in '/home/asd/ros2_ws9/build/testbed_description_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws9/build/testbed_description_goat
+[0.510s] -- Install configuration: ""
+[0.539s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes
+[0.540s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/dummy_link_1.stl
+[0.540s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/imu_link_1.stl
+[0.562s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/caster_4.stl
+[0.563s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/right_wheel_1.stl
+[0.563s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/caster_2.stl
+[0.565s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/caster_1.stl
+[0.572s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/lidar_link_1.stl
+[0.574s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/caster_3.stl
+[0.580s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/left_wheel_1.stl
+[0.580s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/meshes/base_link.stl
+[0.581s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/urdf
+[0.582s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/urdf/testbed.gazebo
+[0.585s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/urdf/materials.xacro
+[0.586s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/urdf/testbed.xacro
+[0.586s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/urdf/testbed.trans
+[0.587s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/launch
+[0.587s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/launch/robot_description.launch.py
+[0.588s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/launch/testbed_rviz_barebones.launch.py
+[0.588s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/rviz
+[0.597s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/rviz/full_bringup.rviz
+[0.598s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/rviz/testbed_barebones.rviz
+[0.598s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/rviz/urdf_gazebo.rviz
+[0.599s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/rviz/urdf_vis_rviz
+[0.599s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/ament_index/resource_index/package_run_dependencies/testbed_description_goat
+[0.600s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/ament_index/resource_index/parent_prefix_path/testbed_description_goat
+[0.600s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/environment/ament_prefix_path.sh
+[0.605s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/environment/ament_prefix_path.dsv
+[0.606s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/environment/path.sh
+[0.606s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/environment/path.dsv
+[0.607s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/local_setup.bash
+[0.607s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/local_setup.sh
+[0.608s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/local_setup.zsh
+[0.620s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/local_setup.dsv
+[0.621s] -- Installing: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/package.dsv
+[0.621s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/ament_index/resource_index/packages/testbed_description_goat
+[0.622s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/cmake/testbed_description_goatConfig.cmake
+[0.622s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/cmake/testbed_description_goatConfig-version.cmake
+[0.631s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_description_goat/share/testbed_description_goat/package.xml
+[0.633s] Invoked command in '/home/asd/ros2_ws9/build/testbed_description_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws9/build/testbed_description_goat

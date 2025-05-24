@@ -1,0 +1,44 @@
+[2.645s] Invoking command in '/home/asd/ros2_ws9/src/my_goat_pkg': AMENT_PREFIX_PATH=/home/asd/ros2_ws9/install/goat_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asd/ros2_ws9/install/goat_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/asd/ros2_ws9/install/goat_interfaces/lib:/home/asd/ros2_ws8/install/goat_interfaces/lib:/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/asd/ros2_ws9/build/my_goat_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages:/home/asd/ros2_ws9/install/goat_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_goat_pkg build --build-base /home/asd/ros2_ws9/build/my_goat_pkg/build install --record /home/asd/ros2_ws9/build/my_goat_pkg/install.log --single-version-externally-managed install_data
+[3.662s] running egg_info
+[3.664s] creating ../../build/my_goat_pkg/my_goat_pkg.egg-info
+[3.664s] writing ../../build/my_goat_pkg/my_goat_pkg.egg-info/PKG-INFO
+[3.665s] writing dependency_links to ../../build/my_goat_pkg/my_goat_pkg.egg-info/dependency_links.txt
+[3.665s] writing entry points to ../../build/my_goat_pkg/my_goat_pkg.egg-info/entry_points.txt
+[3.666s] writing requirements to ../../build/my_goat_pkg/my_goat_pkg.egg-info/requires.txt
+[3.667s] writing top-level names to ../../build/my_goat_pkg/my_goat_pkg.egg-info/top_level.txt
+[3.667s] writing manifest file '../../build/my_goat_pkg/my_goat_pkg.egg-info/SOURCES.txt'
+[3.672s] reading manifest file '../../build/my_goat_pkg/my_goat_pkg.egg-info/SOURCES.txt'
+[3.674s] writing manifest file '../../build/my_goat_pkg/my_goat_pkg.egg-info/SOURCES.txt'
+[3.675s] running build
+[3.675s] running build_py
+[3.675s] creating /home/asd/ros2_ws9/build/my_goat_pkg/build
+[3.676s] creating /home/asd/ros2_ws9/build/my_goat_pkg/build/lib
+[3.676s] creating /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg
+[3.676s] copying my_goat_pkg/simple_commander_api_template.py -> /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg
+[3.676s] copying my_goat_pkg/robot_core_logic.py -> /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg
+[3.677s] copying my_goat_pkg/navigator.py -> /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg
+[3.677s] copying my_goat_pkg/__init__.py -> /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg
+[3.677s] running install
+[3.678s] running install_lib
+[3.680s] creating /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg
+[3.680s] copying /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg/simple_commander_api_template.py -> /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg
+[3.682s] copying /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg/robot_core_logic.py -> /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg
+[3.683s] copying /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg/navigator.py -> /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg
+[3.683s] copying /home/asd/ros2_ws9/build/my_goat_pkg/build/lib/my_goat_pkg/__init__.py -> /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg
+[3.683s] byte-compiling /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/simple_commander_api_template.py to simple_commander_api_template.cpython-310.pyc
+[3.689s] byte-compiling /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/robot_core_logic.py to robot_core_logic.cpython-310.pyc
+[3.693s] byte-compiling /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/navigator.py to navigator.cpython-310.pyc
+[3.697s] byte-compiling /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg/__init__.py to __init__.cpython-310.pyc
+[3.697s] running install_data
+[3.698s] creating /home/asd/ros2_ws9/install/my_goat_pkg/share/ament_index
+[3.698s] creating /home/asd/ros2_ws9/install/my_goat_pkg/share/ament_index/resource_index
+[3.698s] creating /home/asd/ros2_ws9/install/my_goat_pkg/share/ament_index/resource_index/packages
+[3.699s] copying resource/my_goat_pkg -> /home/asd/ros2_ws9/install/my_goat_pkg/share/ament_index/resource_index/packages
+[3.699s] copying package.xml -> /home/asd/ros2_ws9/install/my_goat_pkg/share/my_goat_pkg
+[3.699s] running install_egg_info
+[3.705s] Copying ../../build/my_goat_pkg/my_goat_pkg.egg-info to /home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages/my_goat_pkg-0.0.0-py3.10.egg-info
+[3.708s] running install_scripts
+[3.779s] Installing goat_robo script to /home/asd/ros2_ws9/install/my_goat_pkg/lib/my_goat_pkg
+[3.780s] Installing navigator_server script to /home/asd/ros2_ws9/install/my_goat_pkg/lib/my_goat_pkg
+[3.781s] writing list of installed files to '/home/asd/ros2_ws9/build/my_goat_pkg/install.log'
+[3.849s] Invoked command in '/home/asd/ros2_ws9/src/my_goat_pkg' returned '0': AMENT_PREFIX_PATH=/home/asd/ros2_ws9/install/goat_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asd/ros2_ws9/install/goat_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/asd/ros2_ws9/install/goat_interfaces/lib:/home/asd/ros2_ws8/install/goat_interfaces/lib:/home/asd/ros2_ws7/install/custom_interfaces_anscer/lib:/home/asd/ros2_ws4/install/my_interfaces/lib:/home/asd/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/asd/ros2_ws9/build/my_goat_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asd/ros2_ws9/install/my_goat_pkg/lib/python3.10/site-packages:/home/asd/ros2_ws9/install/goat_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_goat_pkg build --build-base /home/asd/ros2_ws9/build/my_goat_pkg/build install --record /home/asd/ros2_ws9/build/my_goat_pkg/install.log --single-version-externally-managed install_data

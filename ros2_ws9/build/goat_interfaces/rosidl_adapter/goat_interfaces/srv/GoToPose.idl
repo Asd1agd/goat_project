@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from goat_interfaces/srv/GoToPose.srv
+// generated code does not contain a copyright notice
+
+
+module goat_interfaces {
+  module srv {
+    struct GoToPose_Request {
+      double x;
+
+      double y;
+
+      double theta;
+    };
+    struct GoToPose_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "goat_interfaces__py",
+		"source" : "/home/asd/ros2_ws9/build/goat_interfaces/goat_interfaces__py"
+	}
+}

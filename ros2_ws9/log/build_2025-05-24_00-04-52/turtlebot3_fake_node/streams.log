@@ -1,0 +1,78 @@
+[0.085s] Invoking command in '/home/asd/ros2_ws9/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/turtlebot3_simulations:/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat:/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws8/install/goat_interfaces:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws9/src/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws9/install/turtlebot3_fake_node
+[0.255s] -- The C compiler identification is GNU 11.4.0
+[0.425s] -- The CXX compiler identification is GNU 11.4.0
+[0.453s] -- Detecting C compiler ABI info
+[0.681s] -- Detecting C compiler ABI info - done
+[0.725s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.728s] -- Detecting C compile features
+[0.728s] -- Detecting C compile features - done
+[0.740s] -- Detecting CXX compiler ABI info
+[1.025s] -- Detecting CXX compiler ABI info - done
+[1.061s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.062s] -- Detecting CXX compile features
+[1.064s] -- Detecting CXX compile features - done
+[1.080s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.522s] -- Found Python3: /home/asd/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[2.979s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.140s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.170s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.224s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.300s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.517s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.602s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[3.804s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.816s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.092s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.157s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.257s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.293s] -- Looking for pthread.h
+[4.445s] -- Looking for pthread.h - found
+[4.446s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.599s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.601s] -- Found Threads: TRUE  
+[4.710s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.757s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[4.791s] -- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)
+[4.898s] -- Found turtlebot3_msgs: 2.2.3 (/opt/ros/humble/share/turtlebot3_msgs/cmake)
+[5.212s] -- Configuring done
+[5.239s] -- Generating done
+[5.249s] -- Build files have been written to: /home/asd/ros2_ws9/build/turtlebot3_fake_node
+[5.269s] Invoked command in '/home/asd/ros2_ws9/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/turtlebot3_simulations:/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat:/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws8/install/goat_interfaces:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/asd/ros2_ws9/src/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/asd/ros2_ws9/install/turtlebot3_fake_node
+[5.273s] Invoking command in '/home/asd/ros2_ws9/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/turtlebot3_simulations:/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat:/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws8/install/goat_interfaces:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws9/build/turtlebot3_fake_node -- -j8 -l8
+[5.386s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[35.465s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[36.561s] [100%] Built target turtlebot3_fake_node
+[36.587s] Invoked command in '/home/asd/ros2_ws9/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/turtlebot3_simulations:/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat:/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws8/install/goat_interfaces:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws9/build/turtlebot3_fake_node -- -j8 -l8
+[36.592s] Invoking command in '/home/asd/ros2_ws9/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/turtlebot3_simulations:/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat:/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws8/install/goat_interfaces:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws9/build/turtlebot3_fake_node
+[36.610s] -- Install configuration: ""
+[36.610s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[36.618s] -- Set runtime path of "/home/asd/ros2_ws9/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node" to ""
+[36.618s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[36.618s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[36.618s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[36.619s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[36.619s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[36.619s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[36.620s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[36.620s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/include/
+[36.620s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[36.621s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[36.621s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[36.621s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[36.622s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[36.622s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[36.622s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[36.623s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[36.623s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[36.623s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[36.624s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[36.624s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[36.624s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[36.625s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[36.625s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[36.625s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[36.626s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[36.626s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[36.626s] -- Installing: /home/asd/ros2_ws9/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[36.631s] Invoked command in '/home/asd/ros2_ws9/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws8/install/turtlebot3_simulations:/home/asd/ros2_ws8/install/turtlebot3_gazebo_goat:/home/asd/ros2_ws8/install/turtlebot3_fake_node:/home/asd/ros2_ws8/install/testbed_gazebo_goat:/home/asd/ros2_ws8/install/testbed_description_goat:/home/asd/ros2_ws8/install/my_goat_pkg:/home/asd/ros2_ws8/install/goat_interfaces:/home/asd/ros2_ws8/install/goat_gazebo:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws9/build/turtlebot3_fake_node

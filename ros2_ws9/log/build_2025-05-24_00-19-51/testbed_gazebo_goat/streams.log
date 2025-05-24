@@ -1,0 +1,53 @@
+[0.146s] Invoking command in '/home/asd/ros2_ws9/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws9/build/testbed_gazebo_goat -- -j8 -l8
+[0.461s] Invoked command in '/home/asd/ros2_ws9/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/asd/ros2_ws9/build/testbed_gazebo_goat -- -j8 -l8
+[0.479s] Invoking command in '/home/asd/ros2_ws9/build/testbed_gazebo_goat': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws9/build/testbed_gazebo_goat
+[0.685s] -- Install configuration: ""
+[0.685s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch
+[0.687s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch/spawn_playground.launch.py
+[0.691s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//launch/spawn_testbed.launch.py
+[0.692s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds
+[0.692s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/goat_hotel2.world
+[0.692s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/goat_hotel.world
+[0.693s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/testbed_playground.world
+[0.693s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//worlds/testbed_empty.world
+[0.694s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models
+[0.695s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world
+[0.695s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world/model.config
+[0.697s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/my_world/model.sdf
+[0.697s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room
+[0.698s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/model.config
+[0.698s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes
+[0.699s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes/chambre.png
+[0.699s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/meshes/box_room.dae
+[0.700s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/box_room/model.sdf
+[0.700s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric
+[0.701s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric/model.config
+[0.706s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/eric/model.sdf
+[0.707s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room
+[0.708s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room/model.config
+[0.709s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/test_room/model.sdf
+[0.710s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1
+[0.710s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1/model.config
+[0.710s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/Fence1/model.sdf
+[0.711s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence
+[0.711s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/model.config
+[0.711s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence
+[0.711s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence/model.config
+[0.712s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/wooden_fence/model.sdf
+[0.712s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat//models/wooden_fence/model.sdf
+[0.713s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/ament_index/resource_index/package_run_dependencies/testbed_gazebo_goat
+[0.713s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/ament_index/resource_index/parent_prefix_path/testbed_gazebo_goat
+[0.724s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/ament_prefix_path.sh
+[0.730s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/ament_prefix_path.dsv
+[0.732s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/path.sh
+[0.733s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/environment/path.dsv
+[0.733s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.bash
+[0.734s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.sh
+[0.739s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.zsh
+[0.740s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/local_setup.dsv
+[0.740s] -- Installing: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.dsv
+[0.741s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/ament_index/resource_index/packages/testbed_gazebo_goat
+[0.741s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/cmake/testbed_gazebo_goatConfig.cmake
+[0.742s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/cmake/testbed_gazebo_goatConfig-version.cmake
+[0.745s] -- Up-to-date: /home/asd/ros2_ws9/install/testbed_gazebo_goat/share/testbed_gazebo_goat/package.xml
+[0.878s] Invoked command in '/home/asd/ros2_ws9/build/testbed_gazebo_goat' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asd/ros2_ws7/install/my_py_pkg_anscer:/home/asd/ros2_ws4/install/esp_wifi:/home/asd/ros2_ws4/install/maping_odom:/home/asd/ros2_ws/install/turtlesim_catch_them_all:/home/asd/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/asd/ros2_ws9/build/testbed_gazebo_goat

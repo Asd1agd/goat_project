@@ -1,0 +1,6 @@
+{
+  "package_name": "goat_interfaces",
+  "non_idl_tuples": [
+    "/home/asd/ros2_ws9/src/goat_interfaces:srv/GoToPose.srv"
+  ]
+}

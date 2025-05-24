@@ -1,0 +1,4 @@
+source;share/goat_interfaces/local_setup.bash
+source;share/goat_interfaces/local_setup.dsv
+source;share/goat_interfaces/local_setup.sh
+source;share/goat_interfaces/local_setup.zsh
