@@ -131,7 +131,7 @@ def create_gui():
 table_list = ["table1","table2","table3"]
 table_list2 = ["t1","t2","t3"]
 # order_canceled = []
-table_cords = [[-5.5, -1.0, 0.0],[-3.4, 0.0, 0.0],[-0.5, 1.0, 0.0]]
+table_cords = [[-5.8, -0.25, 0.0],[-3.4, 0.0, 0.0],[-0.5, 1.0, 0.0]]
 kitchen_cords = [-3.8, -8.0, 0.0]
 home_cords = [-3.22, -4.5, 0.0]
 curent_pose = [0,0,0]
