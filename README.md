@@ -1,6 +1,10 @@
 # Hotel Waiter Robot Navigation Project
 
 > A ROS 2-based autonomous robot simulation designed for restaurant environments. The robot acts as a **smart waiter**, navigating to tables, interacting with a kitchen queue system, and processing dynamic goals with a GUI.
+>
+> screen shot of project working gui:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b74141ce-9ea2-4ecb-831f-cc4a9c64099b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e0f5382-892c-4337-8286-e2c05c7bc3d5" />
 
 ---
 
